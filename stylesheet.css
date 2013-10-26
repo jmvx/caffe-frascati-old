@@ -214,7 +214,7 @@ h2 {
 }
 
 #menusection {
-    width:300px;
+    width:250px;
     float:left;
     margin:10px;
     margin-top:30px;
@@ -233,7 +233,7 @@ h2 {
 .item {
     display:block;
     text-align:left;
-    width:155px;
+    width:150px;
     margin-bottom:1px;
     margin-top:1px;
     float:left;
@@ -259,8 +259,8 @@ h2 {
   width:500px;
   margin:10px;
   height:100%;
-  border:1px solid black;
-  vertical-align:top;
+/*  border:1px solid black;
+*/  vertical-align:top;
   border-radius:5px;
   padding:5px;
   font-weight:300;
@@ -268,10 +268,14 @@ h2 {
 
 .event-title {
   font-weight:normal;
+  margin-right:10px;
+  float:left;
 }
 
 .event-content {
-  margin-left:20px;
+  padding-left:20px;
+  font-size:11pt;
+  color:rgb(100,10,30);
 }
 
 .event:first-child {

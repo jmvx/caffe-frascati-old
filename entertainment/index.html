@@ -105,8 +105,8 @@ $(document).ready(function(){
       str += [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ][this.getMonth()];
       str += " ";
       str += this.getDate().toString();
-      str += ", ";
-      str += this.getFullYear().toString();
+      // str += ", ";
+      // str += this.getFullYear().toString();
       
       var isMidnight = (this.getHours() == 0 && this.getMinutes() == 0);
       var isNoon = (this.getHours() == 12 && this.getMinutes() == 0);

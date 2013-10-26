@@ -1,5 +1,6 @@
 body {
-    background-color:#f3ecdc;
+    /*background-color:#f3ecdc;*/
+    background-color:#E3DAC9;
     text-rendering:optimizeLegibility;
     font-family: 'Oswald', sans-serif;
 }
@@ -72,7 +73,7 @@ body {
     border-radius:5px;
     display:block;
     overflow:hidden;
-    background-color:white;
+    background-color:#FFFAF0;
 }
 
 #frontpage {
@@ -83,7 +84,7 @@ body {
     border:1px solid #C0C0C0;
     border-radius:5px;
     display:block;
-    background-color:white;
+    background-color:#FFFAF0;
     overflow:hidden;
     margin-right:auto;
     margin-left:auto;
@@ -178,7 +179,7 @@ body {
 .side-image {
   position:relative;
   float:left;
-  background-color:white;
+  background-color:#FFFAF0;
   margin-right:5px;
   height:462px;
   width:300px;

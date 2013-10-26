@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+<title>Caffe Frascati</title>
+
+	<script type="text/javascript">
+
+  $(document).ready(function(){
+    
+    function slideshow(pictures,speed){
+      $(pictures).each(function(index){
+        var apic = $(this);
+        var prev = (index == 0) ? $(pictures).eq(-1) : apic.prev();
+        
+        setTimeout(function(){
+          prev.promise().done(function(){
+            prev.removeClass('active');
+          });
+          apic.addClass('active');
+          apic.fadeIn(speed, function() {
+            prev.hide();
+          });
+        },index*speed);
+      });
+    }  
+    var numpics = 5 // change for more than 3 images
+    var speed = 6000;
+    var pictures = $('.slideshow');
+    
+    slideshow(pictures,speed); 
+    setInterval(function () { 
+      slideshow(pictures,speed);
+    },numpics*speed);
+  });
+
+	</script>
+
+</head>
+
+<body>
+	
+	<div id="container">
+		<div id="header">
+			<div id="title">Caffe Frascati</div>
+			<div id="subtitle">Cappuccino E Vino</div>
+			<div id="navigation">
+				<ul>
+					<li><a href="http://jmv.me/demos/cafe/">Home</a></li>
+					<li><a href="http://jmv.me/demos/cafe/menu/">Menu</a></li>
+					<li><a href="http://jmv.me/demos/cafe/about/">About</a></li>
+					<li><a href="http://jmv.me/demos/cafe/entertainment/">Entertainment</a></li>
+				</ul>
+			</div>
+		</div>
+  
+		
+		<div id="frontpage">
+            <img class="slideshow active" src="slideshow/cafe1.jpg" />
+            <img class="slideshow" src="slideshow/cafe2.jpg" />
+            <img class="slideshow" src="slideshow/cafe3.jpg" /> 
+            <img class="slideshow" src="slideshow/cafe4.jpg" />
+            <img class="slideshow" src="slideshow/cafe5.jpg" />                 
+		</div>
+		
+  	<div class="info">
+  		<div class="contactinfo">
+  		<a href="https://www.google.com/maps/preview#!data=!1m4!1m3!1d2904!2d-121.8869869!3d37.3311829!4m13!3m12!1m0!1m1!1s315+S+1st+St%2C+San+Jose%2C+CA+95113!3m8!1m3!1d203131!2d-121.8174129!3d37.2970155!3m2!1i1024!2i768!4f13.1&fid=0" target="_blank">315 South First Street<br />
+      San Jose, CA 31415</a>
+  		(408) 287 &ndash; 0400
+  		</div>
+		
+  		<div class="hours">
+  		<ul>
+  			<li>Monday &ndash; Thursday: 7:30 am &ndash; 10 pm</li>
+  			<li>Friday: 7:30 am &ndash; midnight</li>
+  			<li>Saturday: 8 am &ndash; midnight</li>
+  			<li>Sunday: 8 am &ndash; 9 pm</li>
+  		</ul>
+  		</div>
+    
+      <div class="social">
+        Find Caffe Frascati on: 
+        <img class="icon" src="icons/facebook.png" />
+        <img class="icon" src="icons/foursquare.png" />
+        <img class="icon" src="icons/googleplus.png" />
+        <img class="icon" src="icons/instagram.png" />
+        <img class="icon" src="icons/twitter.png" />
+        <img class="icon" src="icons/yelp.png" />
+      </div>
+  	</div>
+    
+	</div>
+</body>
+
+</html>

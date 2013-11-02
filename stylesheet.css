@@ -213,11 +213,34 @@ h2 {
   text-align:left;
   margin-left:21px;
   display:inline-block;
-  width:550px;
   vertical-align:top;
   margin-top:15px;
   margin-bottom:0px;
   font-weight:normal;
+}
+
+.feature {
+  margin-left:327px;
+  margin-bottom:10px;
+  font-weight:normal;
+  font-size:10pt;
+}
+
+.feature ul {
+  padding:0px;
+}
+
+.feature h3 {
+  display:inline;
+  color:rgb(184,25,49);
+  margin-bottom:10px;
+  margin-right:5px;
+  font-weight:normal;
+  font-size:10pt;
+}
+
+.feature li {
+  list-style-type:none;
 }
 
 .menusection {
@@ -238,6 +261,7 @@ h2 {
 .menusection ul {
   margin-left:35px;
   padding:0px; 
+  
 }
 
 .item {
@@ -293,12 +317,14 @@ h2 {
 }
 
 .scroll {
-  overflow:scroll;
+  overflow-y:scroll;
+  height:320px;
+  
 }
 
 .scroll-menu {
-  overflow:scroll;
-  height:100%;  
+  overflow-y:scroll;
+  height:370px;
 }
 
 .open {

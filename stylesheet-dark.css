@@ -1,5 +1,5 @@
 body {
-    background-color:#E3DAC9;
+    background-color:#100c08;
     text-rendering:optimizeLegibility;
     font-family: 'Oswald', sans-serif;
 }
@@ -23,7 +23,7 @@ body {
     font-size:30pt;
     color:rgb(184,25,49);
     text-transform:uppercase;
-    text-shadow:1px 1px gray;
+    text-shadow:1px 1px #E3DAC9;
 }
 
 #subtitle {
@@ -32,6 +32,7 @@ body {
     margin-left:2px;
     font-size:12pt;
     text-transform:uppercase;
+    color:#E3DAC9;
 }
 
 #navigation {
@@ -60,7 +61,7 @@ body {
 }
 
 #navigation li a {
-    color:black;
+    color:#E3DAC9;    
     text-decoration:none;
     font-weight:300;
 }
@@ -68,7 +69,7 @@ body {
 #content {
     height:462px;
     box-shadow: 0 0 2px gray;
-    border:1px solid #C0C0C0;
+    border:1px solid gray;
     border-radius:5px;
     display:block;
     overflow:hidden;
@@ -79,7 +80,7 @@ body {
     position:relative;
     height:462px;
     box-shadow: 0 0 2px gray;
-    border:1px solid #C0C0C0;
+    border:1px solid gray;
     border-radius:5px;
     display:block;
     background-color:#FFFAF0;
@@ -131,16 +132,16 @@ body {
     width:120px;
     font-family: 'Oswald', sans-serif;
     font-weight:300;
-    color:black;
+    color:#E3DAC9;    
     height:130px;
 }
 
 .hours {
-    width:300px;
+  width:300px;
 }
 
 .hours li {
-    list-style-type:none;
+  list-style-type:none;
 }
 
 .contactinfo a {
@@ -149,10 +150,10 @@ body {
   height:115px;
 }
 
-.contactinfo {
-    text-align:right;
-    padding-top:15px;
-      height:115px;
+.contactinfo {    
+  text-align:right;
+  padding-top:15px;
+  height:115px;
 }
 
 .social {

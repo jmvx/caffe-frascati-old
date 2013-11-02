@@ -122,6 +122,10 @@ body {
     margin-right:20px;
 }
 
+.info {
+  height:130px;
+}
+
 .hours, .contactinfo {
     float:left;
     display:inline;
@@ -129,11 +133,11 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight:300;
     color:black;
+    height:130px;
 }
 
 .hours {
     width:300px;
-    height:150px;
 }
 
 .hours li {
@@ -143,12 +147,13 @@ body {
 .contactinfo a {
   text-decoration:none;
   color:rgb(184,25,49);
+  height:115px;
 }
 
 .contactinfo {
     text-align:right;
     padding-top:15px;
-    height:150px;
+      height:115px;
 }
 
 .social {
@@ -228,6 +233,8 @@ h2 {
 
 .feature ul {
   padding:0px;
+  margin-top:0px;
+  margin-bottom:0px;
 }
 
 .feature h3 {
@@ -318,7 +325,7 @@ h2 {
 
 .scroll {
   overflow-y:scroll;
-  height:320px;
+  height:335px;
   
 }
 

@@ -68,7 +68,7 @@ body {
 #content {
     height:462px;
     box-shadow: 0 0 2px gray;
-    border:1px solid #C0C0C0;
+    border:1px solid gray;
     border-radius:5px;
     display:block;
     overflow:hidden;
@@ -79,7 +79,7 @@ body {
     position:relative;
     height:462px;
     box-shadow: 0 0 2px gray;
-    border:1px solid #C0C0C0;
+    border:1px solid gray;
     border-radius:5px;
     display:block;
     background-color:#FFFAF0;

@@ -226,9 +226,7 @@ h3 {
 
 .menusection {
     display:block;
-    width:260px;   
-    margin-right:auto;
-    margin-left:auto; 
+    width:100%;
     
 }
 
@@ -260,6 +258,7 @@ h3 {
     margin-top:1px;
     width:80px;
     float:left;
+    margin-right:45px;
 }
 
 #gcal-events {
@@ -272,8 +271,7 @@ h3 {
   width:500px;
   margin:10px;
   height:100%;
-/*  border:1px solid black;
-*/  vertical-align:top;
+  vertical-align:top;
   border-radius:5px;
   padding:5px;
   font-weight:300;
@@ -304,15 +302,12 @@ h3 {
   height:100%;  
 }
 
-.sublink {
-  text-align:center;
-  font-size:10pt;
-  padding:0px;
-  margin:0px;
-  clear:both;
+.open {
+  display:inline-block;
+  margin-right:22px;
 }
 
-.openA, .openB, .openC, .openD, .openE, .openF, .openG{
-  display:none;
-  width:100px;
+.closed {
+  display:inline-block;
+  margin-right:20px;
 }

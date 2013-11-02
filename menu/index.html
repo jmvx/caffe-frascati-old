@@ -11,159 +11,27 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
-  $(".menusection").hide();
-  $('.sectionA').show();
-  $('.openA').show();
-  $('.closedA').hide();
+  $(".menusection ul").hide();
+  $(".menusection .open").hide();
   
-  
-  
-  $("h1.click-sectionA").click(function() {
-    var isvisible = $('.sectionA').is(':visible');
+  $(".menusection h1").click(function() {
+    var parent = $(this).parent();
+    var isvisible = $('ul', parent).is(':visible');
     if(isvisible) {
-      $('.sectionA').slideUp();
-      $('.openA').hide();
-      $('.closedA').show();
+      $('ul', parent).hide();
+      $('.open', this).hide();
+      $('.closed', this).show();
     }
     else {
-      $(".sectionA").slideDown();
-      $('.openA').show();
-      $('.closedA').hide();
-      $(".sectionB").slideUp();
-      $(".sectionC").slideUp();
-      $(".sectionD").slideUp();
-      $(".sectionE").slideUp();
-      $(".sectionF").slideUp();
-      $(".sectionG").slideUp();
+      $('.menusection ul').hide();
+      $('.open').hide();
+      $('.closed').show();
+      $('ul', parent).show();
+      $('.open', this).show();
+      $('.closed', this).hide();
     }
   });
-  
-  $("h1.click-sectionB").click(function() {
-    var isvisible = $('.sectionB').is(':visible');
-    if(isvisible) {
-      $('.sectionB').slideUp();
-      $('.openB').hide();
-      $('.closedB').show();
-    }
-    else {
-      $(".sectionA").slideUp();
-      $(".sectionB").slideDown();
-      $('.openB').show();
-      $('.closedB').hide();
-      $(".sectionC").slideUp();
-      $(".sectionD").slideUp();
-      $(".sectionE").slideUp();
-      $(".sectionF").slideUp();
-      $(".sectionG").slideUp();
-
-    }
-  });
-  
-  $("h1.click-sectionC").click(function() {
-    var isvisible = $('.sectionC').is(':visible');
-    if(isvisible) {
-      $('.sectionC').slideUp();
-      $('.openC').hide();
-      $('.closedC').show();
-    }
-    else {
-      $(".sectionA").slideUp();
-      $(".sectionB").slideUp();
-      $(".sectionC").slideDown();
-      $('.openC').show();
-      $('.closedC').hide();
-      $(".sectionD").slideUp();
-      $(".sectionE").slideUp();
-      $(".sectionF").slideUp();
-      $(".sectionG").slideUp();
-
-
-    }
-  });
-  
-  $("h1.click-sectionD").click(function() {
-    var isvisible = $('.sectionD').is(':visible');
-    if(isvisible) {
-      $('.sectionD').slideUp();
-      $('.openD').hide();
-      $('.closedD').show();
-    }
-    else {
-      $(".sectionA").slideUp();
-      $(".sectionB").slideUp();
-      $(".sectionC").slideUp();
-      $(".sectionD").slideDown();
-      $('.openD').show();
-      $('.closedD').hide();
-      $(".sectionE").slideUp();
-      $(".sectionF").slideUp();
-      $(".sectionG").slideUp();
-
-    }
-  });
-  
-  $("h1.click-sectionE").click(function() {
-    var isvisible = $('.sectionE').is(':visible');
-    if(isvisible) {
-      $('.sectionE').slideUp();
-      $('.openE').hide();
-      $('.closedE').show();
-    }
-    else {
-      $(".sectionA").slideUp();
-      $(".sectionB").slideUp();
-      $(".sectionC").slideUp();
-      $(".sectionD").slideUp();
-      $(".sectionE").slideDown();
-      $('.openE').show();
-      $('.closedE').hide();
-      $(".sectionF").slideUp();
-      $(".sectionG").slideUp();
-    }
-  });
-  
-  
-  $("h1.click-sectionF").click(function() {
-    var isvisible = $('.sectionF').is(':visible');
-    if(isvisible) {
-      $('.sectionF').slideUp();
-      $('.openF').hide();
-      $('.closedF').show();
-    }
-    else {
-      $(".sectionA").slideUp();
-      $(".sectionB").slideUp();
-      $(".sectionC").slideUp();
-      $(".sectionD").slideUp();
-      $(".sectionE").slideUp();
-      $(".sectionF").slideDown();
-      $('.openF').show();
-      $('.closedF').hide();
-      $(".sectionG").slideUp();
-    }
-  });
-  
-  $("h1.click-sectionG").click(function() {
-    var isvisible = $('.sectionG').is(':visible');
-    if(isvisible) {
-      $('.sectionG').slideUp();
-      $('.openG').hide();
-      $('.closedG').show();
-    }
-    else {
-      $(".sectionA").slideUp();
-      $(".sectionB").slideUp();
-      $(".sectionC").slideUp();
-      $(".sectionD").slideUp();
-      $(".sectionE").slideUp();
-      $(".sectionF").slideUp();
-      $(".sectionG").slideDown();
-      $('.openG').show();
-      $('.closedG').hide();
-      $(".sectionG").slideUp();
-    }
-  });
-  
+ 
   
 });
 
@@ -191,8 +59,10 @@ $(document).ready(function(){
 		<div id="content">	
   		<div class="side-image"><img src="../images/menu-2.jpg" /></div>
       <div class="scroll-menu">
-      <h1 class="click-sectionA"><span class="closedA">&#x25B9; </span><span class="openA">&#x25BF;</span> Breakfast</h1>
-			<div class="menusection sectionA">
+			
+      <div class="menusection top">
+        <h1><span class="closed top">&#x25B9; </span>
+          <span class="open top">&#x25BF; </span>Breakfast</h1>
 				<ul>
 					<li><div class="item">Fresh Squeezed OJ</div> 
 						<div class="price">$3.25</div></li>
@@ -210,8 +80,10 @@ $(document).ready(function(){
       			<div class="price">$2.50 &ndash; $5.95</div></li>                  
 				</ul>
 			</div>
-      <h1 class="click-sectionB"><span class="closedB">&#x25B9; </span><span class="openB">&#x25BF;</span> Pastries & Desserts</h1>
-			<div class="menusection sectionB">
+			
+      <div class="menusection">
+        <h1><span class="closed">&#x25B9; </span>
+          <span class="open">&#x25BF; </span>Pastries & Desserts</h1>
 				<ul>
 					<li><div class="item">Plain Croissant</div> 
 						<div class="price">$1.95</div></li>
@@ -237,12 +109,13 @@ $(document).ready(function(){
           	<div class="price">$0.95</div></li>				
 				</ul>
 			</div>
-      
-			<h1 class="click-sectionC"><span class="closedC">&#x25B9; </span><span class="openC">&#x25BF;</span> Lunch</h1>
-			<div class="menusection sectionC">
         
-        <h3>Paninis</h3>
+			<div class="menusection">
+  			<h1><span class="closed">&#x25B9; </span>
+          <span class="open">&#x25BF; </span>Lunch</h1>
+        
 				<ul>
+          <h3>Paninis</h3>
 					<li><div class="item">Ham & Cheese</div> 
 						<div class="price">$6.95</div></li>
 					<li><div class="item">Salami</div> 
@@ -263,8 +136,8 @@ $(document).ready(function(){
             	<div class="price">$3.75</div></li>
 				</ul>
         
-        <h3>Baguettes</h3>
 				<ul>
+          <h3>Baguettes</h3>
 					<li><div class="item">Caprese</div> 
 						<div class="price">$6.95</div></li>
 					<li><div class="item">Ham & Brie</div> 
@@ -273,9 +146,10 @@ $(document).ready(function(){
 						<div class="price">$5.95</div></li>
 				</ul>
 			</div>
-			
-      <h1 class="click-sectionD"><span class="closedD">&#x25B9; </span><span class="openD">&#x25BF;</span> Salads</h1>
-			<div class="menusection sectionD">
+        
+			<div class="menusection">
+        <h1><span class="closed">&#x25B9; </span>
+          <span class="open">&#x25BF; </span>Salads</h1>
 				<ul>
 					<li><div class="item">Side Salad</div> 
 						<div class="price">$4.95</div></li>
@@ -291,9 +165,10 @@ $(document).ready(function(){
     				<div class="price">$8.95</div></li>
 				</ul>
 			</div>
-      
-      <h1 class="click-sectionE"><span class="closedE">&#x25B9; </span><span class="openE">&#x25BF;</span> Quiche & Zuppa</h1>
-			<div class="menusection sectionE">
+        
+			<div class="menusection">     
+        <h1><span class="closed">&#x25B9; </span>
+          <span class="open">&#x25BF; </span>Quiche & Zuppa</h1>
 				<ul>
 					<li><div class="item">Quiche</div> 
 						<div class="price">$8.95</div></li>
@@ -305,9 +180,10 @@ $(document).ready(function(){
 						<div class="price">$6.95</div></li>
 				</ul>
 			</div>
-      
-      <h1 class="click-sectionF"><span class="closedF">&#x25B9; </span><span class="openF">&#x25BF;</span> Cold Drinks</h1>
-			<div class="menusection sectionF">
+        
+			<div class="menusection">
+        <h1><span class="closed">&#x25B9; </span>
+          <span class="open">&#x25BF; </span>Cold Drinks</h1>
 				<ul>
 					<li><div class="item">Quiche</div> 
 						<div class="price">$8.95</div></li>
@@ -319,9 +195,10 @@ $(document).ready(function(){
 						<div class="price">$6.95</div></li>
 				</ul>
 			</div>
-      
-      <h1 class="click-sectionG"><span class="closedG">&#x25B9; </span><span class="openG">&#x25BF;</span> Hot Drinks</h1>
-			<div class="menusection sectionG">
+        
+			<div class="menusection">
+        <h1><span class="closed">&#x25B9; </span>
+          <span class="open">&#x25BF; </span>Hot Drinks</h1>
 				<ul>
 					<li><div class="item">Quiche</div> 
 						<div class="price">$8.95</div></li>

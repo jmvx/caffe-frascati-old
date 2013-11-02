@@ -1,5 +1,4 @@
 body {
-    /*background-color:#f3ecdc;*/
     background-color:#E3DAC9;
     text-rendering:optimizeLegibility;
     font-family: 'Oswald', sans-serif;
@@ -116,12 +115,11 @@ body {
 }
 
 #content p {
-    float:right;
+    float:left;
     font-weight:300;
     width:550px;
-    margin-left:10px;
+    margin-left:20px;
     margin-right:20px;
-    
 }
 
 .hours, .contactinfo {
@@ -131,8 +129,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight:300;
     color:black;
-/*    color:rgb(184,25,49);
-*/}
+}
 
 .hours {
     width:300px;
@@ -194,50 +191,52 @@ body {
   min-height:462px;
 }
 
-h1 {
+.menusection h1 {
     padding-bottom:0px;
     margin-bottom:0px;
+    padding-top:5px;
     font-weight:normal;   
     clear:both;
     cursor:pointer;
-    font-size:20pt;
+    font-size:15pt;
     border-bottom:1px solid black;
-    padding-top:10px;
+}
+
+.menusection h2 {
+  font-weight:normal;
+  margin-left:0px;
+  font-size:13pt;
+  clear:both;
 }
 
 h2 {
-  margin-left:8px;
+  text-align:left;
+  margin-left:21px;
   display:inline-block;
   width:550px;
   vertical-align:top;
-  margin-top:5px;
+  margin-top:15px;
   margin-bottom:0px;
   font-weight:normal;
-  
-}
-
-h3 {
-  text-align:center;
-  padding-top:10px;
-  padding-bottom:0px;
-  margin-bottom:0px;
-  clear:both;
 }
 
 .menusection {
     display:block;
     width:100%;
-    
 }
 
 .menusection li {
     list-style-type:none;
     font-weight:300;
-    
+    float:left;
+}
+
+.menusection li:last-child {
+  margin-bottom:15px;
 }
 
 .menusection ul {
-  margin-left:15px;
+  margin-left:35px;
   padding:0px; 
 }
 
@@ -258,22 +257,23 @@ h3 {
     margin-top:1px;
     width:80px;
     float:left;
-    margin-right:45px;
+    margin-right:30px;
 }
 
 #gcal-events {
   width:560px;
-  float:right;
+  float:left;
+  margin-left:20px;
+  margin-top:20px;
 }
 
 .event {
   display:block;
-  width:500px;
-  margin:10px;
+  width:535px;
+  padding:5px;
   height:100%;
   vertical-align:top;
   border-radius:5px;
-  padding:5px;
   font-weight:300;
 }
 
@@ -285,7 +285,6 @@ h3 {
 
 .event-content {
   padding-left:20px;
-  font-size:11pt;
   color:rgb(100,10,30);
 }
 

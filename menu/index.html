@@ -10,15 +10,162 @@
 
 <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32335530-1']);
-  _gaq.push(['_trackPageview']);
+$(document).ready(function(){
+  $(".menusection").hide();
+  $('.sectionA').show();
+  $('.openA').show();
+  $('.closedA').hide();
+  
+  
+  
+  $("h1.click-sectionA").click(function() {
+    var isvisible = $('.sectionA').is(':visible');
+    if(isvisible) {
+      $('.sectionA').slideUp();
+      $('.openA').hide();
+      $('.closedA').show();
+    }
+    else {
+      $(".sectionA").slideDown();
+      $('.openA').show();
+      $('.closedA').hide();
+      $(".sectionB").slideUp();
+      $(".sectionC").slideUp();
+      $(".sectionD").slideUp();
+      $(".sectionE").slideUp();
+      $(".sectionF").slideUp();
+      $(".sectionG").slideUp();
+    }
+  });
+  
+  $("h1.click-sectionB").click(function() {
+    var isvisible = $('.sectionB').is(':visible');
+    if(isvisible) {
+      $('.sectionB').slideUp();
+      $('.openB').hide();
+      $('.closedB').show();
+    }
+    else {
+      $(".sectionA").slideUp();
+      $(".sectionB").slideDown();
+      $('.openB').show();
+      $('.closedB').hide();
+      $(".sectionC").slideUp();
+      $(".sectionD").slideUp();
+      $(".sectionE").slideUp();
+      $(".sectionF").slideUp();
+      $(".sectionG").slideUp();
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    }
+  });
+  
+  $("h1.click-sectionC").click(function() {
+    var isvisible = $('.sectionC').is(':visible');
+    if(isvisible) {
+      $('.sectionC').slideUp();
+      $('.openC').hide();
+      $('.closedC').show();
+    }
+    else {
+      $(".sectionA").slideUp();
+      $(".sectionB").slideUp();
+      $(".sectionC").slideDown();
+      $('.openC').show();
+      $('.closedC').hide();
+      $(".sectionD").slideUp();
+      $(".sectionE").slideUp();
+      $(".sectionF").slideUp();
+      $(".sectionG").slideUp();
+
+
+    }
+  });
+  
+  $("h1.click-sectionD").click(function() {
+    var isvisible = $('.sectionD').is(':visible');
+    if(isvisible) {
+      $('.sectionD').slideUp();
+      $('.openD').hide();
+      $('.closedD').show();
+    }
+    else {
+      $(".sectionA").slideUp();
+      $(".sectionB").slideUp();
+      $(".sectionC").slideUp();
+      $(".sectionD").slideDown();
+      $('.openD').show();
+      $('.closedD').hide();
+      $(".sectionE").slideUp();
+      $(".sectionF").slideUp();
+      $(".sectionG").slideUp();
+
+    }
+  });
+  
+  $("h1.click-sectionE").click(function() {
+    var isvisible = $('.sectionE').is(':visible');
+    if(isvisible) {
+      $('.sectionE').slideUp();
+      $('.openE').hide();
+      $('.closedE').show();
+    }
+    else {
+      $(".sectionA").slideUp();
+      $(".sectionB").slideUp();
+      $(".sectionC").slideUp();
+      $(".sectionD").slideUp();
+      $(".sectionE").slideDown();
+      $('.openE').show();
+      $('.closedE').hide();
+      $(".sectionF").slideUp();
+      $(".sectionG").slideUp();
+    }
+  });
+  
+  
+  $("h1.click-sectionF").click(function() {
+    var isvisible = $('.sectionF').is(':visible');
+    if(isvisible) {
+      $('.sectionF').slideUp();
+      $('.openF').hide();
+      $('.closedF').show();
+    }
+    else {
+      $(".sectionA").slideUp();
+      $(".sectionB").slideUp();
+      $(".sectionC").slideUp();
+      $(".sectionD").slideUp();
+      $(".sectionE").slideUp();
+      $(".sectionF").slideDown();
+      $('.openF').show();
+      $('.closedF').hide();
+      $(".sectionG").slideUp();
+    }
+  });
+  
+  $("h1.click-sectionG").click(function() {
+    var isvisible = $('.sectionG').is(':visible');
+    if(isvisible) {
+      $('.sectionG').slideUp();
+      $('.openG').hide();
+      $('.closedG').show();
+    }
+    else {
+      $(".sectionA").slideUp();
+      $(".sectionB").slideUp();
+      $(".sectionC").slideUp();
+      $(".sectionD").slideUp();
+      $(".sectionE").slideUp();
+      $(".sectionF").slideUp();
+      $(".sectionG").slideDown();
+      $('.openG').show();
+      $('.closedG').hide();
+      $(".sectionG").slideUp();
+    }
+  });
+  
+  
+});
 
 </script>
 
@@ -43,62 +190,152 @@
 		
 		<div id="content">	
   		<div class="side-image"><img src="../images/menu-2.jpg" /></div>
-      			
-      <div class="scroll-menu">				
-			<div id="menusection">
-				<h1>Breakfast</h1>
+      <div class="scroll-menu">
+      <h1 class="click-sectionA"><span class="closedA">&#x25B9; </span><span class="openA">&#x25BF;</span> Breakfast</h1>
+			<div class="menusection sectionA">
 				<ul>
-					<li><div class="item">Waffles with Blueberries</div> 
-						<div class="price">$5</div></li>
-					<li><div class="item">Pancakes with Syrup</div> 
-						<div class="price">$10</div></li>
-					<li><div class="item">Crepes with Strawberries</div> 
-						<div class="price">$10</div></li>
+					<li><div class="item">Fresh Squeezed OJ</div> 
+						<div class="price">$3.25</div></li>
+					<li><div class="item">Piece of Fruit</div> 
+						<div class="price">$1.00</div></li>
+					<li><div class="item">Yogurt Parfait</div> 
+						<div class="price">$4.95</div></li>
+  				<li><div class="item">Granola or Oatmeal </div> 
+  					<div class="price">$3.55</div></li>
+    			<li><div class="item">Croissant (various)</div> 
+    				<div class="price">$1.95 &ndash; $5.95</div></li> 
+      		<li><div class="item">English Muffin (various)</div> 
+      			<div class="price">$2.50 &ndash; $5.95</div></li>
+      		<li><div class="item">Bagel (various)</div> 
+      			<div class="price">$2.50 &ndash; $5.95</div></li>                  
 				</ul>
 			</div>
-		
-			<div id="menusection">
-				<h1>Sandwiches and Paninis</h1>
+      <h1 class="click-sectionB"><span class="closedB">&#x25B9; </span><span class="openB">&#x25BF;</span> Pastries & Desserts</h1>
+			<div class="menusection sectionB">
 				<ul>
-					<li><div class="item">Chicken Sandwich</div> 
-						<div class="price">$8</div></li>
-					<li><div class="item">Pastrami Sandwich</div> 
-						<div class="price">$15</div></li>
-					<li><div class="item">Cheeseburger</div> 
-						<div class="price">$12</div></li>				
+					<li><div class="item">Plain Croissant</div> 
+						<div class="price">$1.95</div></li>
+					<li><div class="item">Chocolate or Almond Croissant</div> 
+						<div class="price">$2.95</div></li>
+					<li><div class="item">Donut</div> 
+						<div class="price">$1.95</div></li>		
+  				<li><div class="item">Assorted Pastries</div> 
+  					<div class="price">$2.85 &ndash; $3.95</div></li>
+  				<li><div class="item">Cannoli</div> 
+  					<div class="price">$3.95</div></li>
+    			<li><div class="item">Napoleon or Tiramisu</div> 
+					  <div class="price">$4.95</div></li>
+  				<li><div class="item">Apple Strudel</div> 
+      				<div class="price">$3.85</div></li>
+      		<li><div class="item">Plain Biscotti</div> 
+      			<div class="price">$0.95</div></li>
+        	<li><div class="item">Chocolate Biscotti</div> 
+        		<div class="price">$1.25</div></li>
+        	<li><div class="item">Amaretti Cookies</div> 
+        		<div class="price">$0.95</div></li>
+          <li><div class="item">Madeleines/Palmiers</div> 
+          	<div class="price">$0.95</div></li>				
 				</ul>
 			</div>
-		
-			<div id="menusection">
-				<h1>Hot drinks</h1>
+      
+			<h1 class="click-sectionC"><span class="closedC">&#x25B9; </span><span class="openC">&#x25BF;</span> Lunch</h1>
+			<div class="menusection sectionC">
+        
+        <h3>Paninis</h3>
 				<ul>
-					<li><div class="item">Coffee</div> 
-						<div class="price">$3</div></li>
-					<li><div class="item">Chai Tea</div> 
-						<div class="price">$4</div></li>
-					<li><div class="item">Cappucino</div> 
-						<div class="price">$3</div></li>
-  				<li><div class="item">Cafe Late</div> 
+					<li><div class="item">Ham & Cheese</div> 
+						<div class="price">$6.95</div></li>
+					<li><div class="item">Salami</div> 
+						<div class="price">$6.95</div></li>
+					<li><div class="item">3 Italian Meats</div> 
+						<div class="price">$7.95</div></li>
+  				<li><div class="item">3 Cheese</div> 
   					<div class="price">$3</div></li>
-  				<li><div class="item">Hot Cider</div> 
-  						<div class="price">$3</div></li>
+  				<li><div class="item">Caprese</div> 
+  						<div class="price">$8.95</div></li>
+      			<li><div class="item">Mortadella & Goat Cheese</div> 
+      				<div class="price">$7.95</div></li>
+        		<li><div class="item">Grilled Chicken</div> 
+        			<div class="price">$9.95</div></li>
+          	<li><div class="item">Nutella</div> 
+          		<div class="price">$2.95</div></li>
+            <li><div class="item">Nutella w/Banana</div> 
+            	<div class="price">$3.75</div></li>
 				</ul>
-			</div>
-		
-			<div id="menusection">
-				<h1>Cold Drinks</h1>
+        
+        <h3>Baguettes</h3>
 				<ul>
-					<li><div class="item">Orange Juice</div> 
-						<div class="price">$2</div></li>
-					<li><div class="item">Milk</div> 
-						<div class="price">$3</div></li>
-					<li><div class="item">Sparkling Water</div> 
-						<div class="price">$5</div></li>
-					<li><div class="item">Cold Cider</div>
-						<div class="price">$4</div></li>
+					<li><div class="item">Caprese</div> 
+						<div class="price">$6.95</div></li>
+					<li><div class="item">Ham & Brie</div> 
+						<div class="price">$5.95</div></li>
+					<li><div class="item">Salami</div> 
+						<div class="price">$5.95</div></li>
 				</ul>
 			</div>
-		
+			
+      <h1 class="click-sectionD"><span class="closedD">&#x25B9; </span><span class="openD">&#x25BF;</span> Salads</h1>
+			<div class="menusection sectionD">
+				<ul>
+					<li><div class="item">Side Salad</div> 
+						<div class="price">$4.95</div></li>
+					<li><div class="item">Mixed Greens</div> 
+						<div class="price">$5.95</div></li>
+					<li><div class="item">Arugula</div> 
+						<div class="price">$4.95</div></li>
+					<li><div class="item">Caprese</div>
+						<div class="price">$8.95</div></li>
+  				<li><div class="item">Caesar</div>
+  					<div class="price">$7.95</div></li>
+    			<li><div class="item">Greek Salad</div>
+    				<div class="price">$8.95</div></li>
+				</ul>
+			</div>
+      
+      <h1 class="click-sectionE"><span class="closedE">&#x25B9; </span><span class="openE">&#x25BF;</span> Quiche & Zuppa</h1>
+			<div class="menusection sectionE">
+				<ul>
+					<li><div class="item">Quiche</div> 
+						<div class="price">$8.95</div></li>
+					<li><div class="item">Zuppa (cup)</div> 
+						<div class="price">$4.95</div></li>
+					<li><div class="item">Zuppa (bowl)</div> 
+						<div class="price">$5.95</div></li>
+					<li><div class="item">Zuppa (cup) & Salad</div>
+						<div class="price">$6.95</div></li>
+				</ul>
+			</div>
+      
+      <h1 class="click-sectionF"><span class="closedF">&#x25B9; </span><span class="openF">&#x25BF;</span> Cold Drinks</h1>
+			<div class="menusection sectionF">
+				<ul>
+					<li><div class="item">Quiche</div> 
+						<div class="price">$8.95</div></li>
+					<li><div class="item">Zuppa (cup)</div> 
+						<div class="price">$4.95</div></li>
+					<li><div class="item">Zuppa (bowl)</div> 
+						<div class="price">$5.95</div></li>
+					<li><div class="item">Zuppa (cup) & Salad</div>
+						<div class="price">$6.95</div></li>
+				</ul>
+			</div>
+      
+      <h1 class="click-sectionG"><span class="closedG">&#x25B9; </span><span class="openG">&#x25BF;</span> Hot Drinks</h1>
+			<div class="menusection sectionG">
+				<ul>
+					<li><div class="item">Quiche</div> 
+						<div class="price">$8.95</div></li>
+					<li><div class="item">Zuppa (cup)</div> 
+						<div class="price">$4.95</div></li>
+					<li><div class="item">Zuppa (bowl)</div> 
+						<div class="price">$5.95</div></li>
+					<li><div class="item">Zuppa (cup) & Salad</div>
+						<div class="price">$6.95</div></li>
+				</ul>
+			</div>
+      
+      
+      
 		</div>
     
   </div>

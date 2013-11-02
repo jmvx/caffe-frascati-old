@@ -195,11 +195,14 @@ body {
 }
 
 h1 {
-    text-align:center;
     padding-bottom:0px;
-    padding-top:0px;
-    margin-top:0px;
-    font-weight:normal;
+    margin-bottom:0px;
+    font-weight:normal;   
+    clear:both;
+    cursor:pointer;
+    font-size:20pt;
+    border-bottom:1px solid black;
+    padding-top:10px;
 }
 
 h2 {
@@ -213,27 +216,37 @@ h2 {
   
 }
 
-#menusection {
-    width:250px;
-    float:left;
-    margin:10px;
-    margin-top:30px;
+h3 {
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:0px;
+  margin-bottom:0px;
+  clear:both;
 }
 
-#menusection h1 {
-    font-size:16pt;
-    font-weight:normal;
+.menusection {
+    display:block;
+    width:260px;   
+    margin-right:auto;
+    margin-left:auto; 
+    
 }
 
-#menusection li {
+.menusection li {
     list-style-type:none;
     font-weight:300;
+    
+}
+
+.menusection ul {
+  margin-left:15px;
+  padding:0px; 
 }
 
 .item {
     display:block;
     text-align:left;
-    width:150px;
+    width:130px;
     margin-bottom:1px;
     margin-top:1px;
     float:left;
@@ -242,10 +255,10 @@ h2 {
 .price {
     display:block;
     text-align:left;
-    margin-left:50px;
+    margin-left:30px;
     margin-bottom:1px;
     margin-top:1px;
-    width:10px;
+    width:80px;
     float:left;
 }
 
@@ -284,10 +297,22 @@ h2 {
 
 .scroll {
   overflow:scroll;
-  height:420px;
 }
 
 .scroll-menu {
   overflow:scroll;
-  height:462px;
+  height:100%;  
+}
+
+.sublink {
+  text-align:center;
+  font-size:10pt;
+  padding:0px;
+  margin:0px;
+  clear:both;
+}
+
+.openA, .openB, .openC, .openD, .openE, .openF, .openG{
+  display:none;
+  width:100px;
 }

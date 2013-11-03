@@ -218,7 +218,7 @@ img.aboutpic {
     font-weight:normal;   
     clear:both;
     cursor:pointer;
-    font-size:15pt;
+    font-size:12pt;
     border-bottom:1px solid black;
 }
 
@@ -228,6 +228,8 @@ img.aboutpic {
   font-size:13pt;
   clear:both;
   width:100%;
+  color:rgb(184,25,49);
+  margin-top:0px;
 }
 
 h2 {
@@ -238,6 +240,7 @@ h2 {
   margin-top:15px;
   margin-bottom:0px;
   font-weight:normal;
+
 }
 
 .feature {
@@ -290,7 +293,7 @@ h2 {
 .item {
     display:block;
     text-align:left;
-    width:130px;
+    width:190px;
     margin-bottom:1px;
     margin-top:1px;
     float:left;
@@ -299,12 +302,23 @@ h2 {
 .price {
     display:block;
     text-align:left;
-    margin-left:30px;
+    margin-left:10px;
     margin-bottom:1px;
     margin-top:1px;
-    width:80px;
+    width:40px;
     float:left;
     margin-right:30px;
+}
+    
+.price-drink {
+  display:block;
+  text-align:left;
+  margin-left:0px;
+  margin-bottom:1px;
+  margin-top:1px;
+  width:80px;
+  float:left;
+  margin-right:30px;
 }
 
 #gcal-events {

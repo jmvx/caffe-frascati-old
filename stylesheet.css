@@ -119,6 +119,7 @@ body {
     width:550px;
     margin-left:20px;
     margin-right:20px;
+    
 }
 
 .info {
@@ -191,8 +192,23 @@ body {
 }
 
 .side-image img {
-  min-width:300px;
-  min-height:462px;
+  height:462px;
+}
+
+img.logo {
+  display:block;
+  float:left;
+  height:120px;
+  vertical-align:bottom;
+  position:relative;
+  right:30px;
+}
+
+img.aboutpic {
+  display:block;
+  width:300px;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .menusection h1 {

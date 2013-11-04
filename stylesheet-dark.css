@@ -3,21 +3,21 @@ body {
 }
 
 #title {
-    text-shadow:1px 1px #E3DAC9;
+    text-shadow:1px 1px rgb(254,254,240);
 }
 
 #subtitle {
-    color:#E3DAC9;
+    color:rgb(254,254,240);
 }
 
 #navigation li a {
-    color:#E3DAC9;    
+    color:rgb(254,254,240); 
 }
 
 .hours, .contactinfo {
-    color:#E3DAC9;    
+    color:rgb(254,254,240);
 }
 
 .credit {
-  color:#E3DAC9;  
+  color:rgb(254,254,240);
 }

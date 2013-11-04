@@ -21,8 +21,10 @@ body {
 #title {
     display:inline-block;
     font-size:30pt;
-    color:rgb(184,25,49);
-    text-transform:uppercase;
+    color:rgb(194,17,48);
+    
+/*    color:rgb(184,25,49);
+*/    text-transform:uppercase;
     text-shadow:1px 1px gray;
 }
 
@@ -56,7 +58,7 @@ body {
 }
 
 #navigation li a:hover {
-    color:rgb(184,25,49);
+  color:rgb(194,17,48);
 }
 
 #navigation li a {
@@ -72,8 +74,9 @@ body {
     border-radius:5px;
     display:block;
     overflow:hidden;
-    background-color:#FFFAF0;
-}
+    background-color:rgb(254,254,240);
+/*    background-color:#FFFAF0;
+*/}
 
 #frontpage {
     position:relative;
@@ -147,7 +150,8 @@ body {
 
 .contactinfo a {
   text-decoration:none;
-  color:rgb(184,25,49);
+/*  color:rgb(184,25,49);*/
+  color:rgb(194,17,48);
   height:115px;
 }
 
@@ -160,7 +164,7 @@ body {
 .social {
   font-family: 'Oswald', sans-serif;
   font-weight:300;
-  color:rgb(184,25,49);
+  color:rgb(194,17,48);
   padding-top:15px;
   margin-left:610px;
   height:150px;
@@ -229,7 +233,7 @@ img.aboutpic {
   font-size:13pt;
   clear:both;
   width:100%;
-  color:rgb(184,25,49);
+  color:rgb(194,17,48);
   margin-top:0px;
 }
 
@@ -259,7 +263,7 @@ h2 {
 
 .feature h3 {
   display:inline;
-  color:rgb(184,25,49);
+  color:rgb(194,17,48);
   margin-bottom:10px;
   margin-right:5px;
   font-weight:normal;
@@ -351,7 +355,8 @@ h2 {
 }
 
 .event:first-child {
-  border:3px solid rgb(184,25,49);
+  border:3px solid rgb(194,17,48);
+;
 }
 
 .scroll {
@@ -385,5 +390,5 @@ h2 {
 
 .credit a {
   text-decoration:none;
-  color:rgb(184,25,49);
+  color:rgb(194,17,48);
 }

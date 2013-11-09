@@ -129,7 +129,7 @@ body {
   height:130px;
 }
 
-.hours, .contactinfo {
+.hours, .address {
     float:left;
     display:inline;
     width:120px;
@@ -147,17 +147,17 @@ body {
     list-style-type:none;
 }
 
-.contactinfo a {
+.address a {
   text-decoration:none;
 /*  color:rgb(184,25,49);*/
   color:rgb(194,17,48);
   height:115px;
 }
 
-.contactinfo {
+.address {
     text-align:right;
     padding-top:15px;
-      height:115px;
+    height:115px;
 }
 
 .social {
@@ -297,7 +297,6 @@ h2 {
 .menusection ul {
   margin-left:35px;
   padding:0px; 
-  
 }
 
 .item {
@@ -318,6 +317,10 @@ h2 {
     width:40px;
     float:left;
     margin-right:30px;
+}
+
+.price.wide {
+  width:100px;
 }
     
 .price-drink {

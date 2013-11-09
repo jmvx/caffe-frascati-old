@@ -2,44 +2,41 @@
 <html>
 
 <head>
+  
 <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
 <link rel="stylesheet" type="text/css" href="../stylesheet-dark.css"/>
-
-
 <script type="text/javascript" src="jquery.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+
 <title>Caffe Frascati | Menu</title>
 
-<script type="text/javascript">
+  <!-- Animations for the menu -->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $(".menusection ul").hide();
+    $(".menusection .open").hide();
 
-$(document).ready(function(){
-  $(".menusection ul").hide();
-  $(".menusection .open").hide();
-  
-  $(".menusection h1").click(function() {
-    var parent = $(this).parent();
-    var isvisible = $('ul', parent).is(':visible');
-    if(isvisible) {
-      $('ul', parent).hide();
-      $('.open', this).hide();
-      $('.closed', this).show();
-    }
-    else {
-      $('.menusection ul').hide();
-      $('.open').hide();
-      $('.closed').show();
-      $('ul', parent).show();
-      $('.open', this).show();
-      $('.closed', this).hide();
-    }
+    $(".menusection h1").click(function() {
+      var parent = $(this).parent();
+      var isvisible = $('ul', parent).is(':visible');
+      if(isvisible) {
+        $('ul', parent).hide();
+        $('.open', this).hide();
+        $('.closed', this).show();
+      }
+      else {
+        $('.menusection ul').hide();
+        $('.open').hide();
+        $('.closed').show();
+        $('ul', parent).show();
+        $('.open', this).show();
+        $('.closed', this).hide();
+      }
+    });
   });
- 
+  </script>
   
-});
-
-</script>
-
 </head>
 
 <body>
@@ -54,7 +51,7 @@ $(document).ready(function(){
 					<li><a href="http://jmv.me/private/frascati/">Home</a></li>
 					<li><a href="http://jmv.me/private/frascati/menu/">Menu</a></li>
 					<li><a href="http://jmv.me/private/frascati/about/">About</a></li>
-					<li><a href="http://jmv.me/private/frascati/entertainment/">Entertainment</a></li>
+					<li><a href="http://jmv.me/private/frascati/musica/">Musica</a></li>
 				</ul>
 			</div>
 		</div>

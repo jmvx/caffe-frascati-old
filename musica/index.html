@@ -7,8 +7,8 @@
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
 
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
 
 <title>Caffe Frascati | Musica</title>
 
@@ -137,7 +137,7 @@ $(document).ready(function(){
     }
 
     function GCalEvents() {
-      var calendar_json_url = "https://www.google.com/calendar/feeds/3t527mprvvj74ppulcjvfd1448%40group.calendar.google.com/public/full?alt=json"
+      var calendar_json_url = "https://www.google.com/calendar/feeds/hkos1qnhl9mnmilvsct725ft1s%40group.calendar.google.com/public/full?alt=json"
       // get list of upcoming events
       $.getJSON(calendar_json_url, function(data) {
         // Distill events down to the information we care about
@@ -158,7 +158,7 @@ $(document).ready(function(){
       
         // Date objects representing our range
         var today = new Date().rewindToMidnight();
-        var lastday = new Date(today).addDays(7);
+        var lastday = new Date(today).addDays(15);
         
         // Filter to just events within our range
         var upcoming = $.grep(events, function(event, i) {
@@ -194,6 +194,9 @@ $(document).ready(function(){
 <body>
 	
 	<div id="container">
+    
+    <img class="logo" src="../images/umbrella-logo-notext.png" />
+    
 		
 		<div id="header">
 			<div id="title">Caffe Frascati</div>
@@ -210,7 +213,7 @@ $(document).ready(function(){
 		</div>
 		
 		<div id="content">
-      <h2>Upcoming Events<a href="https://www.google.com/calendar/ical/3t527mprvvj74ppulcjvfd1448%40group.calendar.google.com/public/basic.ics"><img style="height:18px; margin-left:10px;" src="../icons/rss.png"/></a></h2>
+      <h2>Upcoming Events<a href="https://www.google.com/calendar/ical/hkos1qnhl9mnmilvsct725ft1s%40group.calendar.google.com/public/basic.ics"><img style="height:18px; margin-left:10px;" src="../icons/rss.png"/></a></h2>
       
     <div class="side-image">
       <img class="slideshow active" src="slideshow/Adira.jpg" />
@@ -260,17 +263,14 @@ $(document).ready(function(){
   			<li>Saturday: 8 am &ndash; midnight</li>
   			<li>Sunday: 8 am &ndash; 9 pm</li>
   		</ul>
-		</div>
-      
-    <img class="logo" src="../images/blacklogo.png" />
-      
+		</div>      
     
     <div class="social">
         Find Caffe Frascati on: 
         <a href="https://www.facebook.com/caffefrascati" target="_blank"><img class="icon" src="../icons/facebook.png" /></a>
         <a href="http://www.yelp.com/biz/caffe-frascati-san-jose-2" target="_blank"><img class="icon" src="../icons/yelp.png" /></a>
         <a href="https://foursquare.com/v/caffe-frascati/4e358f29aeb7f67fbd323dfa" target="_blank"><img class="icon" src="../icons/foursquare.png" /></a>
-        <!-- <img class="icon" src="../icons/instagram.png" /> -->
+        <a href="http://instagram.com/caffefrascati" target="_blank"><img class="icon" src="../icons/instagram.png" /></a>
         <!-- <img class="icon" src="../icons/twitter.png" /> -->
         <a href="https://plus.google.com/102292206362965146813/about" target="_blank"><img class="icon" src="../icons/googleplus.png" /></a>
       </div>

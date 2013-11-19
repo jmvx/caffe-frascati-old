@@ -1,16 +1,21 @@
+@import url('MyFontsWebfontsKit.css');
+
 body {
     background-color:#E3DAC9;
     text-rendering:optimizeLegibility;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size:10pt;
 }
 
 #container {
     width:900px;
     margin-left:auto;
     margin-right:auto;
-    margin-top:30px;
     height:100%;
     overflow:hidden;
+    
+    position:relative;
+    top:-25px
 }
 
 #header {
@@ -20,14 +25,16 @@ body {
 
 #title {
     display:inline-block;
+    font-family: 'TradeGothicLTCom-BdCn20', sans-serif;
     font-size:30pt;
-    color:rgb(194,17,48);
+    color:rgb(239,41,59);
     text-transform:uppercase;
     text-shadow:1px 1px gray;
 }
 
 #subtitle {
     display:inline-block;
+    font-family: 'TradeGothicLTCom-BdCn20', sans-serif;
     padding-top:13px;
     margin-left:2px;
     font-size:12pt;
@@ -35,9 +42,11 @@ body {
 }
 
 #navigation {
+    font-family: 'TradeGothicLTCom-BdCn20', sans-serif;
     float:right;
     display:inline;
     padding-top:28px;
+    font-size:12pt;
 }
 
 #navigation ul {
@@ -56,7 +65,7 @@ body {
 }
 
 #navigation li a:hover {
-    color:rgb(194,17,48);
+    color:rgb(239,41,59);
 }
 
 #navigation li a {
@@ -123,17 +132,17 @@ body {
 }
 
 .info {
-    height:130px;
+    height:65px;
 }
 
 .hours, .address {
     float:left;
     display:inline;
     width:120px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight:300;
     color:black;
-    height:130px;
+    height:65px;
 }
 
 .hours {
@@ -146,23 +155,24 @@ body {
 
 .address a {
     text-decoration:none;
-    color:rgb(194,17,48);
-    height:115px;
+    color:rgb(239,41,59);
+    height:65px;
 }
 
 .address {
     text-align:right;
     padding-top:15px;
-    height:115px;
+    height:65px;
+    width:150px;
 }
 
 .social {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight:300;
-    color:rgb(194,17,48);
+    color:rgb(239,41,59);
     padding-top:15px;
     margin-left:610px;
-    height:150px;
+    height:65px;
     text-align:right;
 }
 
@@ -197,11 +207,11 @@ body {
 
 img.logo {
     display:block;
-    float:left;
-    height:120px;
-    vertical-align:bottom;
+    margin-right:auto;
+    margin-left:auto;
+    width:60px;
     position:relative;
-    right:30px;
+    top:38px;
 }
 
 .aboutgallery {
@@ -218,6 +228,7 @@ img.aboutpic {
 }
 
 .menusection h1 {
+    font-family: 'TradeGothicLTCom-BdCn20', sans-serif;
     padding-bottom:0px;
     margin-bottom:0px;
     padding-top:5px;
@@ -229,16 +240,18 @@ img.aboutpic {
 }
 
 .menusection h2 {
+    font-family: 'TradeGothicLTCom-BdCn20', sans-serif;
     font-weight:normal;
     margin-left:0px;
     font-size:13pt;
     clear:both;
     width:100%;
-    color:rgb(194,17,48);
+    color:rgb(239,41,59);
     margin-top:0px;
 }
 
 h2 {
+    font-family: 'TradeGothicLTCom-BdCn20', sans-serif;
     text-align:left;
     margin-left:21px;
     display:inline-block;
@@ -250,7 +263,7 @@ h2 {
 
 h2 a {
     text-decoration:none;
-    color:rgb(194,17,48);
+    color:rgb(239,41,59);
 }
 
 .feature {
@@ -261,14 +274,14 @@ h2 a {
 }
 
 .feature ul {
-  padding:0px;
-  margin-top:0px;
-  margin-bottom:0px;
+    padding:0px;
+    margin-top:0px;
+    margin-bottom:0px;
 }
 
 .feature h3 {
     display:inline;
-    color:rgb(194,17,48);
+    color:rgb(239,41,59);
     margin-bottom:10px;
     margin-right:5px;
     font-weight:normal;
@@ -277,6 +290,10 @@ h2 a {
 
 .feature li {
     list-style-type:none;
+}
+
+.feature li a {
+    color:rgb(239,41,59);
 }
 
 .menusection {
@@ -363,7 +380,7 @@ h2 a {
 }
 
 .event:first-child {
-    border:3px solid rgb(194,17,48);
+    border:3px solid rgb(239,41,59);
 }
 
 .scroll {
@@ -388,14 +405,16 @@ h2 a {
 }
 
 .credit {
-    width:100%;
+    width:900px;
+    margin-right:auto;
+    margin-left:auto;
     font-size:9pt;
     text-align:center;  
-    font-weight:300;
     border-top:1px solid gray;
+    padding-bottom:30px;
 }
 
 .credit a {
     text-decoration:none;
-    color:rgb(194,17,48);
+    color:rgb(239,41,59);
 }

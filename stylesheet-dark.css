@@ -2,10 +2,6 @@ body {
     background-color:black;
 }
 
-#title {
-    text-shadow:1px 1px rgb(254,254,240);
-}
-
 #subtitle {
     color:rgb(254,254,240);
 }

@@ -158,7 +158,7 @@ $(document).ready(function(){
       
         // Date objects representing our range
         var today = new Date().rewindToMidnight();
-        var lastday = new Date(today).addDays(15);
+        var lastday = new Date(today).addDays(180);
         
         // Filter to just events within our range
         var upcoming = $.grep(events, function(event, i) {

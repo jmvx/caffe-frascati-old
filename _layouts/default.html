@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheet-dark.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    
+    <script type="text/javascript" src="/jquery.js"></script>
+    
+    <title>{{ page.title }}</title>
+  </head>
+  
+  <body>
+    <div id="container">
+      <img class="logo" src="/images/umbrella-logo-notext.png">
+      <div id="header">
+        <div id="title">
+          Caffe Frascati
         </div>
-
-    </body>
+        <div id="subtitle">
+          Cappuccino E Vino
+        </div>
+        <div id="navigation">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/menu/index.html">Menu</a></li>
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/musica/index.html">Musica</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      {{ content }}
+      
+      <div class="address">
+        <a href="https://www.google.com/maps/preview#!data=!1m4!1m3!1d2904!2d-121.8869869!3d37.3311829!4m13!3m12!1m0!1m1!1s315+S+1st+St%2C+San+Jose%2C+CA+95113!3m8!1m3!1d203131!2d-121.8174129!3d37.2970155!3m2!1i1024!2i768!4f13.1&amp;fid=0" target="_blank">315 South First Street<br>
+        San Jose, CA 31415</a> (408) 287 – 0400
+      </div>
+      
+      <div class="hours">
+        <ul>
+          <li>Monday – Thursday: 7 am – 10 pm</li>
+          <li>Friday: 7 am – midnight</li>
+          <li>Saturday: 8 am – midnight</li>
+          <li>Sunday: 8 am – 9 pm</li>
+        </ul>
+      </div>
+      
+      <div class="social">
+        Find Caffe Frascati on:
+        <a href="https://www.facebook.com/caffefrascati" target="_blank"><img class="icon" src="/icons/facebook.png" title="facebook"></a>
+        <a href="http://www.yelp.com/biz/caffe-frascati-san-jose-2" target="_blank"><img class="icon" src="/icons/yelp.png" title="yelp"></a>
+        <a href="https://foursquare.com/v/caffe-frascati/4e358f29aeb7f67fbd323dfa" target="_blank"><img class="icon" src="/icons/foursquare.png" title="foursquare"></a>
+        <a href="http://instagram.com/caffefrascati" target="_blank"><img class="icon" src="/icons/instagram.png" title="instagram"></a>
+        <a href="http://www.tripadvisor.com/Restaurant_Review-g33020-d2666381-Reviews-Caffe_Frascati-San_Jose_California.html" target="_blank"><img class="icon" src="/icons/tripadvisor.png" title="tripadvisor"></a>
+        <a href="https://plus.google.com/102292206362965146813/about" target="_blank"><img class="icon" src="/icons/googleplus.png" title="google plus"></a>
+      </div>
+    </div>
+    
+    <div class="credit">
+      Website created by <a href="http://jmv.me/">Julia Van Cleve</a>
+    </div>
+  </body>
 </html>

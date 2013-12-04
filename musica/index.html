@@ -24,3 +24,13 @@ sideimage: /images/about-2.jpg
 <div class="scroll">
   <div id="gcal-events"></div>
 </div>
+
+<script type="text/javascript" src="/js/gcal.js"></script>
+<script type="text/javascript">
+  $().ready(function() {
+    GCalEvents(
+      "https://www.google.com/calendar/feeds/hkos1qnhl9mnmilvsct725ft1s%40group.calendar.google.com/public/full?alt=json",
+      $("#gcal-events")
+    );
+  });
+</script>

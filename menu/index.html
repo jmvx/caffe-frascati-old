@@ -1,725 +1,632 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-
-<head>
+---
+title: Caffe Frascati | Menu
+layout: default
+---
+<div id="content">  
+  <h2>Menu</h2>
+  <div class="side-image"><img src="/images/menu-2.jpg" /></div>
   
-<link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
-<link rel="stylesheet" type="text/css" href="../stylesheet-dark.css"/>
-
-<script type="text/javascript" src="jquery.js"></script>
-
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-
-<title>Caffe Frascati | Menu</title>
-
-  <!-- for the menu -->
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $(".menusection ul").hide();
-    $(".menusection .open").hide();
-
-    $(".menusection h1").click(function() {
-      var parent = $(this).parent();
-      var isvisible = $('ul', parent).is(':visible');
-      if(isvisible) {
-        $('ul', parent).hide();
-        $('.open', this).hide();
-        $('.closed', this).show();
-      }
-      else {
-        $('.menusection ul').hide();
-        $('.open').hide();
-        $('.closed').show();
-        $('ul', parent).show();
-        $('.open', this).show();
-        $('.closed', this).hide();
-      }
-    });
-  });
-  </script>
+  <div class="feature">
+    <ul>
+      <li><a href="/menu/full-menu.jpg">Click here</a> to download the full menu</li>
+      <li><h3>Happy Hour:</h3>$2 Hamm's pints & other drink specials. 4 &ndash; 7 pm every day!</li>
+  </div>
   
-</head>
-
-<body>
-	
-<div id="container">
-  
-  <img class="logo" src="../images/umbrella-logo-notext.png" />
-  
-		
-	<div id="header">
-		<div id="title">Caffe Frascati</div>
-		<div id="subtitle">Cappuccino E Vino</div>
-		<div id="navigation">
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="">Menu</a></li>
-				<li><a href="../about/index.html">About</a></li>
-				<li><a href="../musica/index.html">Musica</a></li>
-			</ul>
-		</div>
-	</div>
-	
-	<div id="content">	
-    <h2>Menu</h2>
-		<div class="side-image"><img src="../images/menu-2.jpg" /></div>
+  <div class="scroll-menu">
     
-    <div class="feature">
-      <ul>
-        <li><a href="full-menu.jpg">Click here</a> to download the full menu</li>
-        <li><h3>Happy Hour:</h3>$2 Hamm's pints & other drink specials. 4 &ndash; 7 pm every day!</li>
-    </div>
+  <div class="menusection"> <!-- Caffe & Tea --> 
+    <h1>
+      <span class="closed">&#x25B9; </span>
+      <span class="open">&#x25BF; </span>Caffe & Tea
+    </h1>
     
-    <div class="scroll-menu">
-      
-		<div class="menusection"> <!-- Caffe & Tea --> 
-      <h1>
-        <span class="closed">&#x25B9; </span>
-        <span class="open">&#x25BF; </span>Caffe & Tea
-      </h1>
-      
-      <!-- Coffee-->
-			<ul>
-			  <li>
-          <div class="item"><h2>Caffe</h2></div> 
-          <!-- size headings for drinks -->
-  				<div class="price-drink">
-            <span style="color:rgb(239,41,59)">Small</span></div>
-          <div class="price-drink">
-            <span style="color:rgb(239,41,59)">Medium</span></div>
-          <div class="price-drink">
-            <span style="color:rgb(239,41,59)">Large</span></div>
-        </li>
-          
-				<li>
-          <div class="item">Espresso</div>     <!-- item -->
-					<div class="price-drink">$2.00</div> <!-- small price -->
-          <div class="price-drink">$2.85</div> <!-- medium price -->
-          <div class="price-drink"></div>      <!-- large price -->
-        </li>
-				<li>
-          <div class="item">Cappuccino</div> 
-					<div class="price-drink"></div>
-          <div class="price-drink">$3.45</div>
-          <div class="price-drink">$4.05</div>
-        </li>
-  			<li>
-          <div class="item">Caffe Latte</div> 
-  				<div class="price-drink"></div>
-          <div class="price-drink">$3.55</div>
-          <div class="price-drink">$4.35</div>
-        </li>
-  			<li>
-          <div class="item">Mocha</div> 
-    			<div class="price-drink"></div>
-          <div class="price-drink">$3.95</div>
-          <div class="price-drink">$4.75</div>
-        </li>
-  			<li>
-          <div class="item">Americano</div> 
-  				<div class="price-drink"></div>
-          <div class="price-drink">$2.85</div>
-          <div class="price-drink"></div>
-        </li>
-      	<li>
-          <div class="item">Macchiato</div> 
-        	<div class="price-drink"></div>
-          <div class="price-drink">$3.05</div>
-          <div class="price-drink"></div>
-        </li>
-        <li>
-          <div class="item">Africano</div> 
-        	<div class="price-drink"></div>
-          <div class="price-drink">$3.35</div>
-          <div class="price-drink"></div>
-        </li>
-        <li>
-          <div class="item">House Blend</div> 
-        	<div class="price-drink">$1.85</div>
-          <div class="price-drink">$2.35</div>
-          <div class="price-drink">$2.85</div>
-        </li>
-         <li>
-           <div class="item">Refill</div> 
-        	<div class="price-drink">$0.95</div>
-          <div class="price-drink">$1.25</div>
-          <div class="price-drink">$1.55</div>
-        </li>
-        <li>
-          <div class="item">Hot Chocolate</div> 
-         	<div class="price-drink">$2.95</div>
-          <div class="price-drink">$3.45</div>
-          <div class="price-drink">$4.35</div>
-        </li>
-			</ul>
-      
-      <!-- Extras -->
-			<ul>
-      <h2>Extras</h2>
-				<li>
-          <div class="item">Extra Shot</div> 
-					<div class="price-drink"></div>
-          <div class="price-drink"></div>
-          <div class="price-drink">$0.85</div>
-        </li>
-				<li>
-          <div class="item">Soy/Almond Milk</div> 
-					<div class="price-drink"></div>
-          <div class="price-drink"></div>
-          <div class="price-drink">$0.50</div>
-        </li>
-  			<li>
-          <div class="item">Torani Shot</div> 
-  				<div class="price-drink"></div>
-          <div class="price-drink"></div>
-          <div class="price-drink">$0.50</div>
-        </li>
-     		<li>
-          <div class="item">Babyccino</div> 
-     			<div class="price-drink"></div>
-          <div class="price-drink"></div>
-          <div class="price-drink">FREE</div>
-        </li>
-      </ul>
-      
-      <!-- Teas -->
-			<ul>
-      <h2>Teas</h2>
-				<li>
-          <div class="item">Pot of Tea</div> 
-					<div class="price-drink"></div>
-          <div class="price-drink"></div>
-          <div class="price-drink">$3.30</div>
-        </li>
-				<li>
-          <div class="item">Regular Iced Tea</div> 
-					<div class="price-drink"></div>
-          <div class="price-drink"></div>
-          <div class="price-drink">$1.95</div>
-        </li>
-  			<li>
-          <div class="item">Oregon Chai Latte</div> 
-  				<div class="price-drink"></div>
-          <div class="price-drink">$3.50</div>
-          <div class="price-drink">$4.00</div>
-        </li>
-      </ul>
-      
-		</div>  
-		
-    <div class="menusection"> <!-- Breakfast -->
-      <h1>
-        <span class="closed top">&#x25B9; </span>
-        <span class="open top">&#x25BF; </span>Breakfast
-      </h1>
-			
-      <!-- General -->
-      <ul>
-				<li>
-          <div class="item">Fresh Squeezed OJ</div> 
-					<div class="price">$3.25</div>
-        </li>
-				<li>
-          <div class="item">Piece of Fruit</div> 
-					<div class="price">$1.00</div>
-        </li>
-				<li>
-          <div class="item">Yogurt Parfait</div> 
-					<div class="price">$4.95</div>
-        </li>
-				<li>
-          <div class="item">Granola or Oatmeal with Milk</div> 
-					<div class="price">$3.55</div>
-        </li>
-      </ul>
-      
-      <!-- Croissants -->
-      <ul>
-        <h2>Croissants</h2>
-  			<li>
-          <div class="item">Plain Croissant</div> 
-  				<div class="price">$1.95</div>
-        </li> 
-    		<li>
-          <div class="item">Chocolate or Almond</div> 
-    			<div class="price">$2.95</div>
-        </li>
-    		<li>
-          <div class="item">with Swiss Cheese</div> 
-    			<div class="price">$3.95</div>
-        </li>  
-      	<li>
-          <div class="item">with Egg</div> 
-    			<div class="price">$3.95</div>
-        </li>  
-      	<li>
-          <div class="item">with Egg & Cheese</div> 
-      		<div class="price">$4.95</div>
-        </li> 
-        <li>
-          <div class="item">with Ham & Cheese</div> 
-        	<div class="price">$4.95</div>
-        </li>  
-        <li>
-          <div class="item">with Ham & Egg</div> 
-          <div class="price">$4.95</div>
-        </li>  
-        <li>
-          <div class="item">with Ham, Egg, & Cheese</div> 
-          <div class="price">$5.95</div>
-        </li>   
-        <li>
-          <div class="item">with Spinach & Feta</div> 
-          <div class="price">$3.95</div>
-        </li>              
-			</ul>
-      
-      <!-- English Muffins -->
-      <ul>
-        <h2>English Muffin</h2>
-  			<li>
-          <div class="item">with Butter & Jam</div> 
-  				<div class="price">$2.50</div>
-        </li> 
-    		<li>
-          <div class="item">with Egg</div> 
-    			<div class="price">$3.95</div>
-        </li>
-    		<li>
-          <div class="item">with Egg & Cheese</div> 
-    			<div class="price">$4.95</div>
-        </li>  
-      	<li>
-          <div class="item">with Ham & Cheese</div> 
-    			<div class="price">$4.95</div>
-        </li>  
-      	<li>
-          <div class="item">with Ham & Egg</div> 
-      		<div class="price">$4.95</div>
-        </li> 
-        <li>
-          <div class="item">with Ham, Egg, & Cheese</div> 
-        	<div class="price">$5.95</div>
-        </li> 
-      </ul>
-       
-      <!-- Bagels --> 
-      <ul>
-        <h2>Bagel <span style="color:black; font-size:10pt">(plain, onion, sesame, or everything)</span></h2>
-  			<li>
-          <div class="item">with Butter, Cream Cheese, or Jam</div> 
-  				<div class="price">$2.50</div>
-        </li> 
-    		<li>
-          <div class="item">with Egg</div> 
-    			<div class="price">$3.95</div>
-        </li>
-    		<li>
-          <div class="item">with Egg & Cheese</div> 
-    			<div class="price">$4.95</div>
-        </li>  
-      	<li>
-          <div class="item">with Ham & Cheese</div> 
-    			<div class="price">$4.95</div>
-        </li>  
-      	<li>
-          <div class="item">with Ham & Egg</div> 
-      		<div class="price">$4.95</div>
-        </li> 
-        <li>
-          <div class="item">with Ham, Egg, & Cheese</div> 
-        	<div class="price">$5.95</div>
-        </li> 
-      </ul>
+    <!-- Coffee-->
+    <ul>
+      <li>
+        <div class="item"><h2>Caffe</h2></div> 
+        <!-- size headings for drinks -->
+        <div class="price-drink">
+          <span style="color:rgb(239,41,59)">Small</span></div>
+        <div class="price-drink">
+          <span style="color:rgb(239,41,59)">Medium</span></div>
+        <div class="price-drink">
+          <span style="color:rgb(239,41,59)">Large</span></div>
+      </li>
         
-		</div>
-		
-    <div class="menusection"> <!-- Pastries & Desserts -->
-      <h1>
-        <span class="closed">&#x25B9; </span>
-        <span class="open">&#x25BF; </span>Pastries & Desserts
-      </h1>
-      
-      <!-- pastries -->
-      <ul>
-				<li>
-          <div class="item">Plain Croissant</div> 
-					<div class="price">$1.95</div>
-        </li>
-				<li>
-          <div class="item">Chocolate or Almond Croissant</div> 
-					<div class="price">$2.95</div>
-        </li>
-				<li>
-          <div class="item">Donut</div> 
-					<div class="price">$1.95</div>
-        </li>		
-				<li>
-          <div class="item">Cannoli</div> 
-					<div class="price">$3.95</div>
-        </li>
-  			<li>
-          <div class="item">Napoleon or Tiramisu</div> 
-				  <div class="price">$4.95</div>
-        </li>
-				<li>
-          <div class="item">Apple Strudel</div> 
-    			<div class="price">$3.85</div>
-        </li>
-    		<li>
-          <div class="item">Plain Biscotti</div> 
-    			<div class="price">$0.95</div>
-        </li>
-      	<li>
-          <div class="item">Chocolate Biscotti</div> 
-      		<div class="price">$1.25</div>
-        </li>
-      	<li>
-          <div class="item">Amaretti Cookies</div> 
-      		<div class="price">$0.95</div>
-        </li>
-        <li>
-          <div class="item">Madeleines/Palmiers</div> 
-        	<div class="price">$0.95</div>
-        </li>
-        <li>
-          <div class="item">Assorted Pastries</div>
-          <div class="price wide">$2.85 &ndash; $3.95</div>
-        </li>
-			</ul>
-      
-		</div>
-
-		<div class="menusection"> <!-- Lunch --> 
-			<h1>
-        <span class="closed">&#x25B9; </span>
-        <span class="open">&#x25BF; </span>Lunch
-      </h1>
-      
-      <!-- Paninis -->
-			<ul>
-        <h2>Paninis</h2>
-				<li>
-          <div class="item">Ham & Cheese</div> 
-					<div class="price">$6.95</div>
-        </li>
-				<li>
-          <div class="item">Salami</div> 
-					<div class="price">$6.95</div>
-        </li>
-				<li>
-          <div class="item">3 Italian Meats</div> 
-					<div class="price">$7.95</div>
-        </li>
-				<li>
-          <div class="item">3 Cheese</div> 
-					<div class="price">$6.95</div>
-        </li>
-				<li>
-          <div class="item">Caprese</div> 
-					<div class="price">$8.95</div>
-        </li>
-  			<li>
-          <div class="item">Mortadella & Goat Cheese</div> 
-  				<div class="price">$7.95</div>
-        </li>
-      	<li>
-          <div class="item">Vegetarian</div> 
-      		<div class="price">$8.95</div>
-        </li>
-    		<li>
-          <div class="item">Grilled Chicken</div> 
-    			<div class="price">$9.95</div>
-        </li>
-      	<li>
-          <div class="item">Nutella</div> 
-      		<div class="price">$2.95</div>
-        </li>
-        <li>
-          <div class="item">Nutella with Banana</div> 
-        	<div class="price">$3.75</div>
-        </li>
-			</ul>
-      
-      <!-- Baguettes -->
-			<ul>
-        <h2>Baguettes <span style="color:black; font-size:10pt">(Add tomato or red onion to any baguette)</h2>
-				<li>
-          <div class="item">Caprese</div> 
-					<div class="price">$6.95</div>
-        </li>
-				<li>
-          <div class="item">Ham & Brie</div> 
-					<div class="price">$5.95</div>
-        </li>
-				<li>
-          <div class="item">Salami</div> 
-					<div class="price">$5.95</div>
-        </li>
-			</ul>
-      
-		</div>
-     
-		<div class="menusection"> <!-- Salads -->
-      <h1>
-        <span class="closed">&#x25B9; </span>
-        <span class="open">&#x25BF; </span>Salads
-      </h1>
-			
-      <ul>
-				<li>
-          <div class="item">Side Salad</div> 
-					<div class="price">$4.95</div>
-        </li>
-				<li>
-          <div class="item">Mixed Greens</div> 
-					<div class="price">$5.95</div>
-        </li>
-				<li>
-          <div class="item">Arugula</div> 
-					<div class="price">$4.95</div>
-        </li>
-				<li>
-          <div class="item">Caprese</div>
-					<div class="price">$8.95</div>
-        </li>
-				<li>
-          <div class="item">Caesar</div>
-					<div class="price">$7.95</div>
-        </li>
-  			<li>
-          <div class="item">Grilled Chicken Caesar</div>
-  				<div class="price">$10.90</div>
-        </li>
-  			<li>
-          <div class="item">Greek Salad</div>
-  				<div class="price">$8.95</div>
-        </li>
-			</ul>
-      
-		</div>
-     
-		<div class="menusection"> <!-- Quiche & Zuppa -->
-      <h1>
-        <span class="closed">&#x25B9; </span>
-        <span class="open">&#x25BF; </span>Quiche & Zuppa
-      </h1>
-			
-      <ul>
-				<li>
-          <div class="item">Quiche</div> 
-					<div class="price">$8.95</div>
-        </li>
-				<li>
-          <div class="item">Zuppa (Cup)</div> 
-					<div class="price">$4.95</div>
-        </li>
-				<li>
-          <div class="item">Zuppa (Bowl)</div> 
-					<div class="price">$5.95</div>
-        </li>
-				<li>
-          <div class="item">Zuppa (Cup) & Side Salad</div>
-					<div class="price">$6.95</div>
-        </li>
-			</ul>
-      
-		</div>
-    
-		<div class="menusection"> <!-- Cold Drinks -->
-      <h1>
-        <span class="closed">&#x25B9; </span>
-        <span class="open">&#x25BF; </span>Cold Drinks
-      </h1>
-				
-        <ul>
-  					<li>
-              <div class="item">Fresh Squeezed OJ</div> 
-  						<div class="price-drink"></div>
-              <div class="price-drink">$3.25</div>
-              <div class="price-drink"></div>
-            </li>
-    				<li>
-              <div class="item">Orange, Lemon, or Grapefruit Soda</div> 
-    					<div class="price-drink"></div>
-              <div class="price-drink">$1.95</div>
-              <div class="price-drink"></div>
-            </li>
-      			<li>
-              <div class="item">Torani Italian Soda</div> 
-      				<div class="price-drink"></div>
-              <div class="price-drink">$2.35</div>
-              <div class="price-drink"></div>
-            </li>
-         		<li>
-              <div class="item">Apple or Cranberry Juice</div> 
-         			<div class="price-drink"></div>
-              <div class="price-drink">$2.85</div>
-              <div class="price-drink"></div>
-            </li>
-           	<li>
-              <div class="item">Coke/Diet Coke/Sprite</div> 
-           		<div class="price-drink"></div>
-              <div class="price-drink">$1.35</div>
-              <div class="price-drink"></div>
-            </li>
-            <li>
-              <div class="item">Chinotto</div> 
-              <div class="price-drink"></div>
-              <div class="price-drink">$1.95</div>
-              <div class="price-drink"></div>
-            </li>
-        </ul>
-        
-		</div>
-    
-		<div class="menusection"> <!-- Birra, Vino, & Porto -->
-      <h1>
-        <span class="closed">&#x25B9; </span>
-        <span class="open">&#x25BF; </span>Birra, Vino, & Porto
-      </h1>
-        
-      <!-- Beer -->
-			<ul>
-        <h2>Birra</h2>
-					<li>
-            <div class="item">Bottle</div> 
-						<div class="price-drink"></div>
-            <div class="price-drink">$4.50</div>
-            <div class="price-drink"></div>
-          </li>
-  				<li>
-            <div class="item">Draft</div> 
-  					<div class="price-drink"></div>
-            <div class="price-drink">Price at Bar</div>
-            <div class="price-drink"></div>
-          </li>
-      </ul>
-       
-      <!-- Vino & Porto --> 
-			<ul>
-				<li>
-          <div class="item"><h2>Vino & Porto</h2></div> 
-					
-          <div class="price-drink"> <!-- drink size headings -->
-            <span style="color:rgb(239,41,59)"></span></div>
-          <div class="price-drink">
-            <span style="color:rgb(239,41,59)">Glass</span></div>
-          <div class="price-drink">
-            <span style="color:rgb(239,41,59)">Bottle</span></div>
-        </li>
-
-				<li>
-          <div class="item">House White (Frascati)</div> 
-					<div class="price-drink"></div>
-          <div class="price-drink">$5.95</div>
-          <div class="price-drink">$24.00</div>
-        </li>
-				<li>
-          <div class="item">Soave</div> 
-					<div class="price-drink"></div>
-          <div class="price-drink">$6.95</div>
-          <div class="price-drink">$28.00</div>
-        </li>
-  			<li>
-          <div class="item">Pinot Grigio</div> 
-  				<div class="price-drink"></div>
-          <div class="price-drink">$6.95</div>
-          <div class="price-drink">$28.00</div>
-        </li>
-   		  <li>
-          <div class="item">Moscato</div> 
-   				<div class="price-drink"></div>
-          <div class="price-drink">$6.95</div>
-          <div class="price-drink">$28.00</div>
-        </li>
-     		<li>
-          <div class="item">Centine Toscana Ros&eacute;</div> 
-   				<div class="price-drink"></div>
-          <div class="price-drink">$6.95</div>
-          <div class="price-drink">$28.00</div>
-        </li>
-       	<li>
-          <div class="item">House Red (Montepulciano d'Abruzzo)</div> 
-   				<div class="price-drink"></div>
-          <div class="price-drink">$5.95</div>
-          <div class="price-drink">$24.00</div>
-        </li>
-        <li>
-          <div class="item">Chianti</div> 
-          <div class="price-drink"></div>
-          <div class="price-drink">$6.95</div>
-          <div class="price-drink">$28.00</div>
-        </li>
-        <li>
-          <div class="item">Valpoliella</div> 
-          <div class="price-drink"></div>
-          <div class="price-drink">$6.95</div>
-          <div class="price-drink">$28.00</div>
-        </li>
-        <li>
-          <div class="item">Calimocho</div> 
-          <div class="price-drink"></div>
-          <div class="price-drink">$4.95</div>
-          <div class="price-drink"></div>
-        </li>
-        <li>
-          <div class="item">Prosecco/Bellini/Mimosa</div> 
-          <div class="price-drink"></div>
-          <div class="price-drink">$6.95</div>
-          <div class="price-drink">$28.00</div>
-        </li>
+      <li>
+        <div class="item">Espresso</div>     <!-- item -->
+        <div class="price-drink">$2.00</div> <!-- small price -->
+        <div class="price-drink">$2.85</div> <!-- medium price -->
+        <div class="price-drink"></div>      <!-- large price -->
+      </li>
+      <li>
+        <div class="item">Cappuccino</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$3.45</div>
+        <div class="price-drink">$4.05</div>
+      </li>
+      <li>
+        <div class="item">Caffe Latte</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$3.55</div>
+        <div class="price-drink">$4.35</div>
+      </li>
+      <li>
+        <div class="item">Mocha</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$3.95</div>
+        <div class="price-drink">$4.75</div>
+      </li>
+      <li>
+        <div class="item">Americano</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$2.85</div>
+        <div class="price-drink"></div>
+      </li>
+      <li>
+        <div class="item">Macchiato</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$3.05</div>
+        <div class="price-drink"></div>
+      </li>
+      <li>
+        <div class="item">Africano</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$3.35</div>
+        <div class="price-drink"></div>
+      </li>
+      <li>
+        <div class="item">House Blend</div> 
+        <div class="price-drink">$1.85</div>
+        <div class="price-drink">$2.35</div>
+        <div class="price-drink">$2.85</div>
+      </li>
        <li>
-          <div class="item">Cockburn LBV</div> 
-          <div class="price-drink"></div>
-          <div class="price-drink">$6.95</div>
-          <div class="price-drink"></div>
-        </li>
-        <li>
-          <div class="item">Sandeman 10yr Tawny</div> 
-          <div class="price-drink"></div>
-          <div class="price-drink">$7.95</div>
-          <div class="price-drink"></div>
-        </li>
-      </ul>
-        
-		</div>
+         <div class="item">Refill</div> 
+        <div class="price-drink">$0.95</div>
+        <div class="price-drink">$1.25</div>
+        <div class="price-drink">$1.55</div>
+      </li>
+      <li>
+        <div class="item">Hot Chocolate</div> 
+         <div class="price-drink">$2.95</div>
+        <div class="price-drink">$3.45</div>
+        <div class="price-drink">$4.35</div>
+      </li>
+    </ul>
+    
+    <!-- Extras -->
+    <ul>
+    <h2>Extras</h2>
+      <li>
+        <div class="item">Extra Shot</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink"></div>
+        <div class="price-drink">$0.85</div>
+      </li>
+      <li>
+        <div class="item">Soy/Almond Milk</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink"></div>
+        <div class="price-drink">$0.50</div>
+      </li>
+      <li>
+        <div class="item">Torani Shot</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink"></div>
+        <div class="price-drink">$0.50</div>
+      </li>
+       <li>
+        <div class="item">Babyccino</div> 
+         <div class="price-drink"></div>
+        <div class="price-drink"></div>
+        <div class="price-drink">FREE</div>
+      </li>
+    </ul>
+    
+    <!-- Teas -->
+    <ul>
+    <h2>Teas</h2>
+      <li>
+        <div class="item">Pot of Tea</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink"></div>
+        <div class="price-drink">$3.30</div>
+      </li>
+      <li>
+        <div class="item">Regular Iced Tea</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink"></div>
+        <div class="price-drink">$1.95</div>
+      </li>
+      <li>
+        <div class="item">Oregon Chai Latte</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$3.50</div>
+        <div class="price-drink">$4.00</div>
+      </li>
+    </ul>
+    
+  </div>  
+  
+  <div class="menusection"> <!-- Breakfast -->
+    <h1>
+      <span class="closed top">&#x25B9; </span>
+      <span class="open top">&#x25BF; </span>Breakfast
+    </h1>
+    
+    <!-- General -->
+    <ul>
+      <li>
+        <div class="item">Fresh Squeezed OJ</div> 
+        <div class="price">$3.25</div>
+      </li>
+      <li>
+        <div class="item">Piece of Fruit</div> 
+        <div class="price">$1.00</div>
+      </li>
+      <li>
+        <div class="item">Yogurt Parfait</div> 
+        <div class="price">$4.95</div>
+      </li>
+      <li>
+        <div class="item">Granola or Oatmeal with Milk</div> 
+        <div class="price">$3.55</div>
+      </li>
+    </ul>
+    
+    <!-- Croissants -->
+    <ul>
+      <h2>Croissants</h2>
+      <li>
+        <div class="item">Plain Croissant</div> 
+        <div class="price">$1.95</div>
+      </li> 
+      <li>
+        <div class="item">Chocolate or Almond</div> 
+        <div class="price">$2.95</div>
+      </li>
+      <li>
+        <div class="item">with Swiss Cheese</div> 
+        <div class="price">$3.95</div>
+      </li>  
+      <li>
+        <div class="item">with Egg</div> 
+        <div class="price">$3.95</div>
+      </li>  
+      <li>
+        <div class="item">with Egg & Cheese</div> 
+        <div class="price">$4.95</div>
+      </li> 
+      <li>
+        <div class="item">with Ham & Cheese</div> 
+        <div class="price">$4.95</div>
+      </li>  
+      <li>
+        <div class="item">with Ham & Egg</div> 
+        <div class="price">$4.95</div>
+      </li>  
+      <li>
+        <div class="item">with Ham, Egg, & Cheese</div> 
+        <div class="price">$5.95</div>
+      </li>   
+      <li>
+        <div class="item">with Spinach & Feta</div> 
+        <div class="price">$3.95</div>
+      </li>              
+    </ul>
+    
+    <!-- English Muffins -->
+    <ul>
+      <h2>English Muffin</h2>
+      <li>
+        <div class="item">with Butter & Jam</div> 
+        <div class="price">$2.50</div>
+      </li> 
+      <li>
+        <div class="item">with Egg</div> 
+        <div class="price">$3.95</div>
+      </li>
+      <li>
+        <div class="item">with Egg & Cheese</div> 
+        <div class="price">$4.95</div>
+      </li>  
+      <li>
+        <div class="item">with Ham & Cheese</div> 
+        <div class="price">$4.95</div>
+      </li>  
+      <li>
+        <div class="item">with Ham & Egg</div> 
+        <div class="price">$4.95</div>
+      </li> 
+      <li>
+        <div class="item">with Ham, Egg, & Cheese</div> 
+        <div class="price">$5.95</div>
+      </li> 
+    </ul>
+     
+    <!-- Bagels --> 
+    <ul>
+      <h2>Bagel <span style="color:black; font-size:10pt">(plain, onion, sesame, or everything)</span></h2>
+      <li>
+        <div class="item">with Butter, Cream Cheese, or Jam</div> 
+        <div class="price">$2.50</div>
+      </li> 
+      <li>
+        <div class="item">with Egg</div> 
+        <div class="price">$3.95</div>
+      </li>
+      <li>
+        <div class="item">with Egg & Cheese</div> 
+        <div class="price">$4.95</div>
+      </li>  
+      <li>
+        <div class="item">with Ham & Cheese</div> 
+        <div class="price">$4.95</div>
+      </li>  
+      <li>
+        <div class="item">with Ham & Egg</div> 
+        <div class="price">$4.95</div>
+      </li> 
+      <li>
+        <div class="item">with Ham, Egg, & Cheese</div> 
+        <div class="price">$5.95</div>
+      </li> 
+    </ul>
       
-		</div>
+  </div>
+  
+  <div class="menusection"> <!-- Pastries & Desserts -->
+    <h1>
+      <span class="closed">&#x25B9; </span>
+      <span class="open">&#x25BF; </span>Pastries & Desserts
+    </h1>
+    
+    <!-- pastries -->
+    <ul>
+      <li>
+        <div class="item">Plain Croissant</div> 
+        <div class="price">$1.95</div>
+      </li>
+      <li>
+        <div class="item">Chocolate or Almond Croissant</div> 
+        <div class="price">$2.95</div>
+      </li>
+      <li>
+        <div class="item">Donut</div> 
+        <div class="price">$1.95</div>
+      </li>    
+      <li>
+        <div class="item">Cannoli</div> 
+        <div class="price">$3.95</div>
+      </li>
+      <li>
+        <div class="item">Napoleon or Tiramisu</div> 
+        <div class="price">$4.95</div>
+      </li>
+      <li>
+        <div class="item">Apple Strudel</div> 
+        <div class="price">$3.85</div>
+      </li>
+      <li>
+        <div class="item">Plain Biscotti</div> 
+        <div class="price">$0.95</div>
+      </li>
+      <li>
+        <div class="item">Chocolate Biscotti</div> 
+        <div class="price">$1.25</div>
+      </li>
+      <li>
+        <div class="item">Amaretti Cookies</div> 
+        <div class="price">$0.95</div>
+      </li>
+      <li>
+        <div class="item">Madeleines/Palmiers</div> 
+        <div class="price">$0.95</div>
+      </li>
+      <li>
+        <div class="item">Assorted Pastries</div>
+        <div class="price wide">$2.85 &ndash; $3.95</div>
+      </li>
+    </ul>
     
   </div>
+
+  <div class="menusection"> <!-- Lunch --> 
+    <h1>
+      <span class="closed">&#x25B9; </span>
+      <span class="open">&#x25BF; </span>Lunch
+    </h1>
     
-	<div class="address">
-	<a href="https://www.google.com/maps/preview#!data=!1m4!1m3!1d2904!2d-121.8869869!3d37.3311829!4m13!3m12!1m0!1m1!1s315+S+1st+St%2C+San+Jose%2C+CA+95113!3m8!1m3!1d203131!2d-121.8174129!3d37.2970155!3m2!1i1024!2i768!4f13.1&fid=0" target="_blank">315 South First Street<br />
-  San Jose, CA 31415</a>
-	(408) 287 &ndash; 0400
-	</div>
-		
-	<div class="hours">
-		<ul>
-			<li>Monday &ndash; Thursday: 7 am &ndash; 10 pm</li>
-			<li>Friday: 7 am &ndash; midnight</li>
-			<li>Saturday: 8 am &ndash; midnight</li>
-			<li>Sunday: 8 am &ndash; 9 pm</li>
-		</ul>
-	</div>  
+    <!-- Paninis -->
+    <ul>
+      <h2>Paninis</h2>
+      <li>
+        <div class="item">Ham & Cheese</div> 
+        <div class="price">$6.95</div>
+      </li>
+      <li>
+        <div class="item">Salami</div> 
+        <div class="price">$6.95</div>
+      </li>
+      <li>
+        <div class="item">3 Italian Meats</div> 
+        <div class="price">$7.95</div>
+      </li>
+      <li>
+        <div class="item">3 Cheese</div> 
+        <div class="price">$6.95</div>
+      </li>
+      <li>
+        <div class="item">Caprese</div> 
+        <div class="price">$8.95</div>
+      </li>
+      <li>
+        <div class="item">Mortadella & Goat Cheese</div> 
+        <div class="price">$7.95</div>
+      </li>
+      <li>
+        <div class="item">Vegetarian</div> 
+        <div class="price">$8.95</div>
+      </li>
+      <li>
+        <div class="item">Grilled Chicken</div> 
+        <div class="price">$9.95</div>
+      </li>
+      <li>
+        <div class="item">Nutella</div> 
+        <div class="price">$2.95</div>
+      </li>
+      <li>
+        <div class="item">Nutella with Banana</div> 
+        <div class="price">$3.75</div>
+      </li>
+    </ul>
+    
+    <!-- Baguettes -->
+    <ul>
+      <h2>Baguettes <span style="color:black; font-size:10pt">(Add tomato or red onion to any baguette)</h2>
+      <li>
+        <div class="item">Caprese</div> 
+        <div class="price">$6.95</div>
+      </li>
+      <li>
+        <div class="item">Ham & Brie</div> 
+        <div class="price">$5.95</div>
+      </li>
+      <li>
+        <div class="item">Salami</div> 
+        <div class="price">$5.95</div>
+      </li>
+    </ul>
+    
+  </div>
+   
+  <div class="menusection"> <!-- Salads -->
+    <h1>
+      <span class="closed">&#x25B9; </span>
+      <span class="open">&#x25BF; </span>Salads
+    </h1>
+    
+    <ul>
+      <li>
+        <div class="item">Side Salad</div> 
+        <div class="price">$4.95</div>
+      </li>
+      <li>
+        <div class="item">Mixed Greens</div> 
+        <div class="price">$5.95</div>
+      </li>
+      <li>
+        <div class="item">Arugula</div> 
+        <div class="price">$4.95</div>
+      </li>
+      <li>
+        <div class="item">Caprese</div>
+        <div class="price">$8.95</div>
+      </li>
+      <li>
+        <div class="item">Caesar</div>
+        <div class="price">$7.95</div>
+      </li>
+      <li>
+        <div class="item">Grilled Chicken Caesar</div>
+        <div class="price">$10.90</div>
+      </li>
+      <li>
+        <div class="item">Greek Salad</div>
+        <div class="price">$8.95</div>
+      </li>
+    </ul>
+    
+  </div>
+   
+  <div class="menusection"> <!-- Quiche & Zuppa -->
+    <h1>
+      <span class="closed">&#x25B9; </span>
+      <span class="open">&#x25BF; </span>Quiche & Zuppa
+    </h1>
+    
+    <ul>
+      <li>
+        <div class="item">Quiche</div> 
+        <div class="price">$8.95</div>
+      </li>
+      <li>
+        <div class="item">Zuppa (Cup)</div> 
+        <div class="price">$4.95</div>
+      </li>
+      <li>
+        <div class="item">Zuppa (Bowl)</div> 
+        <div class="price">$5.95</div>
+      </li>
+      <li>
+        <div class="item">Zuppa (Cup) & Side Salad</div>
+        <div class="price">$6.95</div>
+      </li>
+    </ul>
+    
+  </div>
   
-  <div class="social">
-      Find Caffe Frascati on: 
-      <a href="https://www.facebook.com/caffefrascati" target="_blank"><img class="icon" src="../icons/facebook.png" title="facebook"/></a>
-      <a href="http://www.yelp.com/biz/caffe-frascati-san-jose-2" target="_blank"><img class="icon" src="../icons/yelp.png" title="yelp"/></a>
-      <a href="https://foursquare.com/v/caffe-frascati/4e358f29aeb7f67fbd323dfa" target="_blank"><img class="icon" src="../icons/foursquare.png" title="foursquare"/></a>
-      <a href="http://instagram.com/caffefrascati" target="_blank"><img class="icon" src="../icons/instagram.png" title="instagram"/></a>
-      <a href="http://www.tripadvisor.com/Restaurant_Review-g33020-d2666381-Reviews-Caffe_Frascati-San_Jose_California.html" target="_blank"><img class="icon" src="../icons/tripadvisor.png" title="tripadvisor"/></a>
-      <a href="https://plus.google.com/102292206362965146813/about" target="_blank"><img class="icon" src="../icons/googleplus.png" title="google plus"/></a>
-    </div>
+  <div class="menusection"> <!-- Cold Drinks -->
+    <h1>
+      <span class="closed">&#x25B9; </span>
+      <span class="open">&#x25BF; </span>Cold Drinks
+    </h1>
+      
+      <ul>
+          <li>
+            <div class="item">Fresh Squeezed OJ</div> 
+            <div class="price-drink"></div>
+            <div class="price-drink">$3.25</div>
+            <div class="price-drink"></div>
+          </li>
+          <li>
+            <div class="item">Orange, Lemon, or Grapefruit Soda</div> 
+            <div class="price-drink"></div>
+            <div class="price-drink">$1.95</div>
+            <div class="price-drink"></div>
+          </li>
+          <li>
+            <div class="item">Torani Italian Soda</div> 
+            <div class="price-drink"></div>
+            <div class="price-drink">$2.35</div>
+            <div class="price-drink"></div>
+          </li>
+           <li>
+            <div class="item">Apple or Cranberry Juice</div> 
+             <div class="price-drink"></div>
+            <div class="price-drink">$2.85</div>
+            <div class="price-drink"></div>
+          </li>
+           <li>
+            <div class="item">Coke/Diet Coke/Sprite</div> 
+             <div class="price-drink"></div>
+            <div class="price-drink">$1.35</div>
+            <div class="price-drink"></div>
+          </li>
+          <li>
+            <div class="item">Chinotto</div> 
+            <div class="price-drink"></div>
+            <div class="price-drink">$1.95</div>
+            <div class="price-drink"></div>
+          </li>
+      </ul>
+      
+  </div>
   
+  <div class="menusection"> <!-- Birra, Vino, & Porto -->
+    <h1>
+      <span class="closed">&#x25B9; </span>
+      <span class="open">&#x25BF; </span>Birra, Vino, & Porto
+    </h1>
+      
+    <!-- Beer -->
+    <ul>
+      <h2>Birra</h2>
+        <li>
+          <div class="item">Bottle</div> 
+          <div class="price-drink"></div>
+          <div class="price-drink">$4.50</div>
+          <div class="price-drink"></div>
+        </li>
+        <li>
+          <div class="item">Draft</div> 
+          <div class="price-drink"></div>
+          <div class="price-drink">Price at Bar</div>
+          <div class="price-drink"></div>
+        </li>
+    </ul>
+     
+    <!-- Vino & Porto --> 
+    <ul>
+      <li>
+        <div class="item"><h2>Vino & Porto</h2></div> 
+        
+        <div class="price-drink"> <!-- drink size headings -->
+          <span style="color:rgb(239,41,59)"></span></div>
+        <div class="price-drink">
+          <span style="color:rgb(239,41,59)">Glass</span></div>
+        <div class="price-drink">
+          <span style="color:rgb(239,41,59)">Bottle</span></div>
+      </li>
+
+      <li>
+        <div class="item">House White (Frascati)</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$5.95</div>
+        <div class="price-drink">$24.00</div>
+      </li>
+      <li>
+        <div class="item">Soave</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$6.95</div>
+        <div class="price-drink">$28.00</div>
+      </li>
+      <li>
+        <div class="item">Pinot Grigio</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$6.95</div>
+        <div class="price-drink">$28.00</div>
+      </li>
+       <li>
+        <div class="item">Moscato</div> 
+         <div class="price-drink"></div>
+        <div class="price-drink">$6.95</div>
+        <div class="price-drink">$28.00</div>
+      </li>
+       <li>
+        <div class="item">Centine Toscana Ros&eacute;</div> 
+         <div class="price-drink"></div>
+        <div class="price-drink">$6.95</div>
+        <div class="price-drink">$28.00</div>
+      </li>
+       <li>
+        <div class="item">House Red (Montepulciano d'Abruzzo)</div> 
+         <div class="price-drink"></div>
+        <div class="price-drink">$5.95</div>
+        <div class="price-drink">$24.00</div>
+      </li>
+      <li>
+        <div class="item">Chianti</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$6.95</div>
+        <div class="price-drink">$28.00</div>
+      </li>
+      <li>
+        <div class="item">Valpoliella</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$6.95</div>
+        <div class="price-drink">$28.00</div>
+      </li>
+      <li>
+        <div class="item">Calimocho</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$4.95</div>
+        <div class="price-drink"></div>
+      </li>
+      <li>
+        <div class="item">Prosecco/Bellini/Mimosa</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$6.95</div>
+        <div class="price-drink">$28.00</div>
+      </li>
+     <li>
+        <div class="item">Cockburn LBV</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$6.95</div>
+        <div class="price-drink"></div>
+      </li>
+      <li>
+        <div class="item">Sandeman 10yr Tawny</div> 
+        <div class="price-drink"></div>
+        <div class="price-drink">$7.95</div>
+        <div class="price-drink"></div>
+      </li>
+    </ul>
+      
+  </div>
+    
+  </div>
   
 </div>
-
-<div class="credit">Website created by <a href="http://jmv.me/">Julia Van Cleve</a></div>
-
-</body>
-
-</html>

@@ -1,285 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-
-<head>
-<link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
-<link rel="stylesheet" type="text/css" href="../stylesheet-dark.css"/>
-
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
-
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-
-<title>Caffe Frascati | Musica</title>
-
-<!-- for slideshow -->
-<script type="text/javascript">
-
-$(document).ready(function(){
+---
+title: Caffe Frascati | Musica
+layout: default
+---
+<div id="content">
+  <h2>Upcoming Events<a href="webcal://www.google.com/calendar/ical/hkos1qnhl9mnmilvsct725ft1s%40group.calendar.google.com/public/basic.ics"><img style="height:20px; margin-left:10px;" src="/icons/rss.png" title="subscribe to full calendar"/></a>
+  <a href="https://www.google.com/calendar/embed?src=hkos1qnhl9mnmilvsct725ft1s%40group.calendar.google.com&ctz=America/Los_Angeles" target="_blank"><img style="height:20px; margin-left:px;" src="/icons/calendar.png" title="view full calendar"/></a></h2>
   
-  function slideshow(pictures,speed){
-    $(pictures).each(function(index){
-      var apic = $(this);
-      var prev = (index == 0) ? $(pictures).eq(-1) : apic.prev();
-      
-      setTimeout(function(){
-        prev.promise().done(function(){
-          prev.removeClass('active');
-        });
-        apic.addClass('active');
-        apic.fadeIn(speed, function() {
-          prev.hide();
-        });
-      },index*speed);
-    });
-  }  
-  var numpics = 5 // change for more than 3 images
-  var speed = 6000;
-  var pictures = $('.slideshow');
+  <div class="side-image">
+    <img class="slideshow active" src="slideshow/Adira.jpg" />
+    <img class="slideshow" src="slideshow/BenH.jpg" />
+    <img class="slideshow" src="slideshow/Cado.jpg" /> 
+    <img class="slideshow" src="slideshow/Kavanaughs.jpg" />
+    <img class="slideshow" src="slideshow/TyreekTroyDavid.jpg" />
+  </div>  
+
+  <div class="feature">
+    <ul>
+      <li>
+        <h3>Every Tuesday:</h3> Open Mic Night! All styles welcome. 
+        <span style="text-decoration:underline">Happy Hour all night!</span>
+      </li>
+      <li>
+        <h3>First Friday of the month:</h3>South First Friday Art Walk (starting at 8 pm) and Caffe Frascati Opera Night!
+      </li>
+      <li>
+        <h3>First Saturday of the month:</h3>Kavanaugh Brothers Celtic Experience! (starting at 8 pm)
+      </li>
+    </ul>
   
-  slideshow(pictures,speed); 
-  setInterval(function () { 
-    slideshow(pictures,speed);
-  },numpics*speed);
-});
+  </div>
 
-</script>
-
-<!-- For google calendar -->
-<script type='text/javascript'>
-    // from StackOverflow user "Scott",
-    // http://stackoverflow.com/questions/12192491/jquery-sort-array-by-iso-8601-date
-    Date.prototype.setISO8601 = function(string) {
-      var regexp = "([0-9]{4})(-([0-9]{2})(-([0-9]{2})" +
-      "(T([0-9]{2}):([0-9]{2})(:([0-9]{2})(\.([0-9]+))?)?" +
-      "(Z|(([-+])([0-9]{2}):([0-9]{2})))?)?)?)?";
-      var d = string.match(new RegExp(regexp));
-  
-      var offset = 0;
-      var date = new Date(d[1], 0, 1);
-  
-      if (d[3]) { date.setMonth(d[3] - 1); }
-      if (d[5]) { date.setDate(d[5]); }
-      if (d[7]) { date.setHours(d[7]); }
-      if (d[8]) { date.setMinutes(d[8]); }
-      if (d[10]) { date.setSeconds(d[10]); }
-      if (d[12]) { date.setMilliseconds(Number("0." + d[12]) * 1000); }
-      if (d[14]) {
-        offset = (Number(d[16]) * 60) + Number(d[17]);
-        offset *= ((d[15] == '-') ? 1 : -1);
-      }
-  
-      offset -= date.getTimezoneOffset();
-      time = (Number(date) + (offset * 60 * 1000));
-      this.setTime(Number(time));
-    
-      return this;
-    }
-    
-    Date.prototype.rewindToMidnight = function() {
-      this.setHours(0);
-      this.setMinutes(0);
-      this.setSeconds(0);
-      this.setMilliseconds(0);
-      return this;
-    }
-    
-    Date.prototype.addDays = function(days) {
-      this.setTime(this.getTime() + days * 24 * 60 * 60 * 1000);
-      return this;
-    }
-    
-    Date.prototype.fallsOnDay = function(d) {
-      // Get midnight of both dates, are they the same?
-      var dMidnight = new Date(d).rewindToMidnight();
-      var tMidnight = new Date(this).rewindToMidnight();
-      return (dMidnight.getTime() == tMidnight.getTime());
-    }
-    
-    Date.prototype.fallsBetweenDates = function(start, end) {
-      return (this >= start && this <= end);
-    }
-    
-    Date.prototype.toJuliaString = function() {
-      var str = "";
-      
-      str += [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ][this.getDay()];
-      str += ", ";
-      str += [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ][this.getMonth()];
-      str += " ";
-      str += this.getDate().toString();
-      // str += ", ";
-      // str += this.getFullYear().toString();
-      
-      var isMidnight = (this.getHours() == 0 && this.getMinutes() == 0);
-      var isNoon = (this.getHours() == 12 && this.getMinutes() == 0);
-      var isNoonOrMidnight = (isMidnight || isNoon);
-      var isAM = (this.getHours() < 12);
-      
-      str += " at ";
-      if (isMidnight)
-        str += "midnight"
-      else if (isNoon)
-        str += "noon"
-      else
-        str += (this.getHours() % 12).toString();
-      
-      if (this.getMinutes() > 0)
-      {
-        var paddedMins = (this.getMinutes() + 100).toString().slice(-2);
-        str += ":" + paddedMins;
-      }
-      
-      if (!isNoonOrMidnight)
-        str += " " + (isAM ? "AM" : "PM");
-      
-      return str;
-    }
-
-    function GCalEvents() {
-      var calendar_json_url = "https://www.google.com/calendar/feeds/hkos1qnhl9mnmilvsct725ft1s%40group.calendar.google.com/public/full?alt=json"
-      // get list of upcoming events
-      $.getJSON(calendar_json_url, function(data) {
-        // Distill events down to the information we care about
-        var events = new Array();
-        $.each(data.feed.entry, function(i, item) {
-          console.log(item);
-          var ev = {};
-          ev.title = item.title.$t;
-          ev.content = item.content.$t;
-          ev.date = (new Date()).setISO8601(item.gd$when[0].startTime);
-          events.push(ev);
-        });
-      
-        // Sort events by date, ascending
-        events.sort(function (a, b) {
-          return b.date < a.date ? 1 : -1;
-        });
-      
-        // Date objects representing our range
-        var today = new Date().rewindToMidnight();
-        var lastday = new Date(today).addDays(180);
-        
-        // Filter to just events within our range
-        var upcoming = $.grep(events, function(event, i) {
-          return event.date.fallsBetweenDates(today, lastday);
-        });
-      
-        // Output
-        $.each(upcoming, function(i, event) {
-          var el_title = $("<div>");
-          el_title.addClass("event-title");
-          el_title.text(event.title);
-          
-          var el_date = $("<div>");
-          el_date.addClass("event-date");
-          el_date.text(event.date.toJuliaString());
-          
-          var el_content = $("<div>");
-          el_content.addClass("event-content");
-          el_content.text(event.content);
-          
-          var el = $("<div>").append(el_title)
-                             .append(el_date)
-                             .append(el_content);
-          el.addClass("event");
-          $("#gcal-events").append(el);
-        });
-      });
-    }
-  </script>
-
-</head>
-
-<body>
-	
-	<div id="container">
-    
-    <img class="logo" src="../images/umbrella-logo-notext.png" />
-    
-		
-		<div id="header">
-			<div id="title">Caffe Frascati</div>
-			<div id="subtitle">Cappuccino E Vino</div>
-			<div id="navigation">
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../menu/index.html">Menu</a></li>
-					<li><a href="../about/index.html">About</a></li>
-					<li><a href="">Musica</a></li>
-          
-				</ul>
-			</div>
-		</div>
-		
-		<div id="content">
-      <h2>Upcoming Events<a href="webcal://www.google.com/calendar/ical/hkos1qnhl9mnmilvsct725ft1s%40group.calendar.google.com/public/basic.ics"><img style="height:20px; margin-left:10px;" src="../icons/rss.png" title="subscribe to full calendar"/></a>
-      <a href="https://www.google.com/calendar/embed?src=hkos1qnhl9mnmilvsct725ft1s%40group.calendar.google.com&ctz=America/Los_Angeles" target="_blank"><img style="height:20px; margin-left:px;" src="../icons/calendar.png" title="view full calendar"/></a></h2>
-      
-    <div class="side-image">
-      <img class="slideshow active" src="slideshow/Adira.jpg" />
-      <img class="slideshow" src="slideshow/BenH.jpg" />
-      <img class="slideshow" src="slideshow/Cado.jpg" /> 
-      <img class="slideshow" src="slideshow/Kavanaughs.jpg" />
-      <img class="slideshow" src="slideshow/TyreekTroyDavid.jpg" />
-    </div>  
-    
-    <div class="feature">
-      <ul>
-        <li>
-          <h3>Every Tuesday:</h3> Open Mic Night! All styles welcome. 
-          <span style="text-decoration:underline">Happy Hour all night!</span>
-        </li>
-        <li>
-          <h3>First Friday of the month:</h3>South First Friday Art Walk (starting at 8 pm) and Caffe Frascati Opera Night!
-        </li>
-        <li>
-          <h3>First Saturday of the month:</h3>Kavanaugh Brothers Celtic Experience! (starting at 8 pm)
-        </li>
-      </ul>
-      
-    </div>
-    
-    <div class="scroll">
-      <div id="gcal-events"></div>
-    </div>
-      
-      <script type="text/javascript" charset="utf-8">
-        $(document).ready(GCalEvents());
-      </script>
-      
-		</div>
-	
-  
-		<div class="address">
-		<a href="https://www.google.com/maps/preview#!data=!1m4!1m3!1d2904!2d-121.8869869!3d37.3311829!4m13!3m12!1m0!1m1!1s315+S+1st+St%2C+San+Jose%2C+CA+95113!3m8!1m3!1d203131!2d-121.8174129!3d37.2970155!3m2!1i1024!2i768!4f13.1&fid=0" target="_blank">315 South First Street<br />
-    San Jose, CA 31415</a>
-		(408) 287 &ndash; 0400
-		</div>
-	
-  	<div class="hours">
-  		<ul>
-  			<li>Monday &ndash; Thursday: 7 am &ndash; 10 pm</li>
-  			<li>Friday: 7 am &ndash; midnight</li>
-  			<li>Saturday: 8 am &ndash; midnight</li>
-  			<li>Sunday: 8 am &ndash; 9 pm</li>
-  		</ul>
-  	</div>      
-    
-    <div class="social">
-        Find Caffe Frascati on: 
-        <a href="https://www.facebook.com/caffefrascati" target="_blank"><img class="icon" src="../icons/facebook.png" title="facebook"/></a>
-        <a href="http://www.yelp.com/biz/caffe-frascati-san-jose-2" target="_blank"><img class="icon" src="../icons/yelp.png" title="yelp"/></a>
-        <a href="https://foursquare.com/v/caffe-frascati/4e358f29aeb7f67fbd323dfa" target="_blank"><img class="icon" src="../icons/foursquare.png" title="foursquare"/></a>
-        <a href="http://instagram.com/caffefrascati" target="_blank"><img class="icon" src="../icons/instagram.png" title="instagram"/></a>
-        <a href="http://www.tripadvisor.com/Restaurant_Review-g33020-d2666381-Reviews-Caffe_Frascati-San_Jose_California.html" target="_blank"><img class="icon" src="../icons/tripadvisor.png" title="tripadvisor"/></a>
-        <a href="https://plus.google.com/102292206362965146813/about" target="_blank"><img class="icon" src="../icons/googleplus.png" title="google plus"/></a>
-      </div>
-
+  <div class="scroll">
+    <div id="gcal-events"></div>
+  </div>
 </div>
-    
-<div class="credit">Website created by <a href="http://jmv.me/">Julia Van Cleve</a></div>
-
-</body>
-
-</html>

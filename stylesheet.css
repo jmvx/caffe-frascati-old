@@ -100,14 +100,29 @@ body {
     width:898px;
 }
 
-#frontpage img.slideshow {
+#frontpage img {
     position:absolute;
-    opacity:0;
     min-height:462px;
     min-width:900px;
+}
 
-    transition: opacity 4s;
-    -webkit-transition: opacity 4s;
+
+@-webkit-keyframes slideshow {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
 }
 
 .side-image img.slideshow {
@@ -116,10 +131,6 @@ body {
     min-height:462px;
     min-width:300px;
     z-index:0;
-}
-
-#frontpage img.active {
-    opacity: 1;
 }
 
 .side-image img.active {

@@ -3,12 +3,34 @@ title: Caffe Frascati
 layout: default
 ---
 <div id="frontpage">
-  <img class="slideshow active" src="slideshow/cafe1.jpg" />
-  <img class="slideshow" src="slideshow/cafe2.jpg" />
-  <img class="slideshow" src="slideshow/cafe3.jpg" />
-  <img class="slideshow" src="slideshow/cafe4.jpg" />
-  <img class="slideshow" src="slideshow/cafe5.jpg" />
-  <img class="slideshow" src="slideshow/cafe6.jpg" />
-  <img class="slideshow" src="slideshow/Mauricio.jpg" />
-  <img class="slideshow" src="slideshow/Harry-Mathias.jpg" />
+  <!--
+    <img class="slideshow active" src="slideshow/cafe1.jpg" />
+    -->
+  <!--
+  <img data-slidesrc="slideshow/cafe2.jpg" />
+  <img data-slidesrc="slideshow/cafe3.jpg" />
+  <img data-slidesrc="slideshow/cafe4.jpg" />
+  <img data-slidesrc="slideshow/cafe5.jpg" />
+  <img data-slidesrc="slideshow/cafe6.jpg" />
+  <img data-slidesrc="slideshow/Mauricio.jpg" />
+  <img data-slidesrc="slideshow/Harry-Mathias.jpg" />
+    -->
 </div>
+
+<script type="text/javascript" src="/js/slideshow.js"></script>
+<script type="text/javascript">
+  $().ready(function() {
+    JMVXSlideshow(
+      [
+        "slideshow/cafe2.jpg",
+        "slideshow/cafe3.jpg",
+        "slideshow/cafe4.jpg",
+        "slideshow/cafe5.jpg",
+        "slideshow/cafe6.jpg",
+        "slideshow/Mauricio.jpg",
+        "slideshow/Harry-Mathias.jpg"
+      ],
+      $("#frontpage")
+    );
+  });
+</script>

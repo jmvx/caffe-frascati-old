@@ -50,16 +50,19 @@ function JMVXSlideshow(images, target, a, b) {
     
     // Create the keyframes for the animation
     // Based on http://css3.bradshawenterprises.com/cfimg/
-    var keyframes = '@-webkit-keyframes jmvxSlideshow {\n';
-    keyframes += '\t0% { opacity: 1; }\n';
-    keyframes += '\t' + Math.round(100*a/t) + '% { opacity: 1; }\n';
-    keyframes += '\t' + Math.round(100/n) + '% { opacity: 0; }\n';
-    keyframes += '\t' + Math.round(100*(1-(b/t))) + '% { opacity: 0; }\n';
-    keyframes += '\t100% { opacity: 1; }\n';
-    keyframes += '}';
+    var keyframes = '';
+    [ '', '-webkit-', '-moz-' ].forEach(function (prefix) {
+      keyframes += '@' + prefix + 'keyframes jmvxSlideshow {\n';
+      keyframes += '\t0% { opacity: 1; }\n';
+      keyframes += '\t' + Math.round(100*a/t) + '% { opacity: 1; }\n';
+      keyframes += '\t' + Math.round(100/n) + '% { opacity: 0; }\n';
+      keyframes += '\t' + Math.round(100*(1-(b/t))) + '% { opacity: 0; }\n';
+      keyframes += '\t100% { opacity: 1; }\n';
+      keyframes += '}\n\n';
+    });
     target.append($('<style type="text/css" scoped>' + keyframes + '</style>'));
     
-    // Add them all to the DOM
+    // Add all the images to the DOM
     target.append(imgs);
   });
   

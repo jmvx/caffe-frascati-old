@@ -41,7 +41,10 @@ function JMVXSlideshow(images, target, a, b) {
         'animation-timing-function': 'ease-in-out',
         'animation-iteration-count': 'infinite',
         'animation-duration': (2 * n).toString() + 's',
-        'animation-delay': (2 * i).toString() + 's'
+        
+        // The last image added occludes the others, so we start its animation
+        // first
+        'animation-delay': (2 * (n - i - 1)).toString() + 's'
       });
     });
     

@@ -23,23 +23,38 @@
  ******************************************************************************/
 
 
+// a = duration to show each image, in seconds
+// b = duration of crossfade, in seconds
 function JMVXSlideshow(images, target, a, b) {
   target.data('images', new Array);
   
   // After all images are loaded, we can set up the CSS to animate
   target.on('onLoadComplete', function () {
     var imgs = target.data('images');
+    var n = imgs.length;
+    var t = (a + b) * n;
     
     // Add CSS to each image
     $.each(imgs, function(i, item) {
       $(item).css({
-        'animation-name': 'slideshow',
+        'animation-name': 'jmvxSlideshow',
         'animation-timing-function': 'ease-in-out',
         'animation-iteration-count': 'infinite',
-        'animation-duration': (2 * imgs.length).toString() + 's',
+        'animation-duration': (2 * n).toString() + 's',
         'animation-delay': (2 * i).toString() + 's'
       });
     });
+    
+    // Create the keyframes for the animation
+    // Based on http://css3.bradshawenterprises.com/cfimg/
+    var keyframes = '@-webkit-keyframes jmvxSlideshow {\n';
+    keyframes += '\t0% { opacity: 1; }\n';
+    keyframes += '\t' + Math.round(100*a/t) + '% { opacity: 1; }\n';
+    keyframes += '\t' + Math.round(100/n) + '% { opacity: 0; }\n';
+    keyframes += '\t' + Math.round(100*(1-(b/t))) + '% { opacity: 0; }\n';
+    keyframes += '\t100% { opacity: 1; }\n';
+    keyframes += '}';
+    target.append($('<style type="text/css" scoped>' + keyframes + '</style>'));
     
     // Add them all to the DOM
     target.append(imgs);

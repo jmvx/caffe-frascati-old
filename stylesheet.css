@@ -13,8 +13,7 @@ body {
     margin-left:auto;
     margin-right:auto;
     height:100%;
-    overflow:hidden;
-    
+    overflow:hidden; 
     position:relative;
     top:-25px
 }
@@ -93,7 +92,7 @@ body {
     border:1px solid #3f3f3f;
     border-radius:5px;
     display:block;
-    background-color:#FFFAF0;
+    background-color:black;
     overflow:hidden;
     margin-right:auto;
     margin-left:auto;

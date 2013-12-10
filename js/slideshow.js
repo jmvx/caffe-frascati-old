@@ -40,11 +40,11 @@ function JMVXSlideshow(images, target, a, b) {
         'animation-name': 'jmvxSlideshow',
         'animation-timing-function': 'ease-in-out',
         'animation-iteration-count': 'infinite',
-        'animation-duration': (2 * n).toString() + 's',
+        'animation-duration': t.toString() + 's',
         
         // The last image added occludes the others, so we start its animation
         // first
-        'animation-delay': (2 * (n - i - 1)).toString() + 's'
+        'animation-delay': ((a + b) * (n - i - 1)).toString() + 's'
       });
     });
     

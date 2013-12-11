@@ -76,7 +76,8 @@ body {
 }
 
 #content {
-    height:462px;
+    /*height:462px;*/
+    height:400px;
     box-shadow: 0 0 2px gray;
     border:1px solid #3f3f3f;
     border-radius:5px;
@@ -87,7 +88,8 @@ body {
 
 #frontpage {
     position:relative;
-    height:462px;
+    /*height:462px;*/
+    height:400px;
     box-shadow: 0 0 2px gray;
     border:1px solid #3f3f3f;
     border-radius:5px;
@@ -185,9 +187,9 @@ body {
 .side-image {
     position:relative;
     float:left;
-    background-color:#FFFAF0;
+    background-color:black;
     margin-right:5px;
-    height:462px;
+    height:400px;
     width:300px;
     border-right:1px solid gray;
     overflow:hidden;
@@ -196,7 +198,7 @@ body {
 }
 
 .side-image img {
-    height:462px;
+    width:301px;
 }
 
 img.logo {
@@ -381,13 +383,15 @@ h2 a {
 
 .scroll {
     overflow-y:scroll;
-    height:335px;
+    /*height:335px;*/
+    height:280px;
   
 }
 
 .scroll-menu {
     overflow-y:scroll;
-    height:370px;
+    /*height:370px;*/
+    height:315px;
 }
 
 .open {

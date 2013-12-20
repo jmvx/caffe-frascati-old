@@ -89,7 +89,7 @@ moment.fn.toJuliaStringWithTime = function() {
     str += this.format(":mm");
   
   if (!isNoonOrMidnight)
-    str += this.format(" A");
+    str += this.format(" a");
   
   return str;
 }

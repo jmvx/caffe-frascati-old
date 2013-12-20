@@ -70,7 +70,6 @@ moment.fn.toJuliaString = function() {
 }
 
 moment.fn.toJuliaStringWithTime = function() {
-  console.log(this.format());
   // Build it up to "Friday, December 20 at "
   var str = this.toJuliaString() + " at ";
   

@@ -118,7 +118,6 @@ function GCalEvents(calendar_json_url, target) {
     // Distill events down to the information we care about
     var events = new Array();
     $.each(data.feed.entry, function(i, item) {
-      console.log(item);
       var ev = {};
       ev.title = item.title.$t;
       ev.content = item.content.$t;

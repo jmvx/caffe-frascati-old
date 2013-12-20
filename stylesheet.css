@@ -15,12 +15,12 @@ body {
     height:100%;
     overflow:hidden; 
     position:relative;
-    top:-25px
 }
 
 #header {
     width:900px;
     height:60px;
+    margin-top:30px;
 }
 
 #title {
@@ -76,7 +76,6 @@ body {
 }
 
 #content {
-    /*height:462px;*/
     height:400px;
     box-shadow: 0 0 2px gray;
     border:1px solid #3f3f3f;
@@ -128,10 +127,6 @@ body {
     
 }
 
-.info {
-    height:65px;
-}
-
 .hours, .address {
     float:left;
     display:inline;
@@ -139,7 +134,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight:300;
     color:rgb(254,254,240);
-    height:65px;
+    height:100px;
 }
 
 .hours {
@@ -150,16 +145,33 @@ body {
     list-style-type:none;
 }
 
+#specialhours {
+  color:rgb(254,254,240);
+  position:absolute;
+  bottom:-5px;
+  text-align:right;
+  right:0px;
+}
+
+li.list-title {
+  color:rgb(239,41,59);
+  font-size:18px;
+}
+
+#specialhours ul {
+  list-style-type:none;
+}
+
 .address a {
     text-decoration:none;
     color:rgb(239,41,59);
-    height:65px;
+    min-height:65px;
 }
 
 .address {
     text-align:right;
     padding-top:15px;
-    height:65px;
+    min-height:65px;
     width:150px;
 }
 
@@ -168,7 +180,7 @@ body {
     font-weight:300;
     color:rgb(239,41,59);
     padding-top:15px;
-    height:65px;
+    min-height:65px;
     text-align:right;
 }
 
@@ -383,14 +395,12 @@ h2 a {
 
 .scroll {
     overflow-y:scroll;
-    /*height:335px;*/
     height:280px;
   
 }
 
 .scroll-menu {
     overflow-y:scroll;
-    /*height:370px;*/
     height:315px;
 }
 

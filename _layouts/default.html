@@ -12,12 +12,15 @@
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     
+    {% if page.slideshow or (page.sideimages | size) > 1 %}
+    <script type="text/javascript" src="/js/slideshow.js"></script>
+    {% endif %}
+    
     <title>{{ page.title }}</title>
   </head>
   
   <body>
     <div id="container">
-      <!-- <img class="logo" src="/images/umbrella-logo-notext.png"> -->
       <div id="header">
         <div id="title">
           Caffe Frascati

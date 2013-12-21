@@ -2,8 +2,21 @@
 layout: default
 ---
 <div id="content">
-  <div class="side-image">
-    <img src="{{ page.sideimage }}" />
+  {% if (page.sideimages | size) > 1 %}
+    {% assign page.slideshow = true %}
+    <div class="side-image slideshow" data-showduration="3s" data-fadeduration="1s">
+  {% else %}
+    <div class="side-image">
+  {% endif %}
+    
+  {% for image in page.sideimages %}
+    {% if forloop.first %}
+      <img src="{{ image }}" />
+    {% else %}
+      <img data-slidesrc="{{ image }}" />
+    {% endif %}
+  {% endfor %}
+    
   </div>
   
   {{ content }}

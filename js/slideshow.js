@@ -22,16 +22,21 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-
-// a = duration to show each image, in seconds
-// b = duration of crossfade, in seconds
-function JMVXSlideshow(images, target, a, b) {
-  target.data('images', new Array);
+function jmvxApplySlideshow(target) {
+  target = $(target);
+  
+  // Keep a counter for the images that have yet to load, i.e., those without
+  // src="blah.jpg" attributes
+  var notloaded = $('img:not([src])', target);
+  target.data('counter', notloaded.length);
   
   // After all images are loaded, we can set up the CSS to animate
   target.on('onLoadComplete', function () {
-    var imgs = target.data('images');
+    var target = $(this);
+    var imgs = $('img', target);
     var n = imgs.length;
+    var a = parseInt(target.data('showduration'));
+    var b = parseInt(target.data('fadeduration'));
     var t = (a + b) * n;
     
     // Add CSS to each image
@@ -61,20 +66,25 @@ function JMVXSlideshow(images, target, a, b) {
       keyframes += '}\n\n';
     });
     target.append($('<style type="text/css" scoped>' + keyframes + '</style>'));
-    
-    // Add all the images to the DOM
-    target.append(imgs);
   });
   
-  // Load each image
-  $.each(images, function(i, item) {
-    var img = new Image();
+  // Load each image, decrementing the counter as they load, and then trigger
+  // onLoadComplete() when all are loaded
+  notloaded.each(function(i, img) {
     img.onload = function() {
-      target.data('images').push(img);
-      if (target.data('images').length == images.length)
+      target.data('counter', target.data('counter') - 1);
+      if (target.data('counter') === 0)
         target.trigger('onLoadComplete');
     }
-    img.src = item;
+    img.src = $(img).data('slidesrc');
   });
   
 }
+
+
+// When the document is loaded, initialize each slideshow on the page
+$(document).ready(function () {
+  $('.slideshow').each(function(i, target) {
+    jmvxApplySlideshow(target);
+  });
+});

@@ -107,16 +107,10 @@ body {
     min-width:900px;
 }
 
-.side-image img.slideshow {
+.side-image img {
     position:absolute;
-    display:none;
     min-height:462px;
     min-width:300px;
-    z-index:0;
-}
-
-.side-image img.active {
-    z-index:1 !important;
 }
 
 #content p {

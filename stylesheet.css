@@ -1,5 +1,6 @@
-@import url('/MyFontsWebfontsKit.css');
+@import url('/webfonts/MyFontsWebfontsKit.css');
 @import url('//fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('/webfonts/socicon.css');
 
 body {
     background-color:black;
@@ -176,12 +177,34 @@ li.list-title {
 }
 
 .social {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:300;
-    color:rgb(239,41,59);
-    padding-top:15px;
-    min-height:65px;
-    text-align:right;
+  color:rgb(239,41,59);
+  padding-top:15px;
+  min-height:65px;
+  
+  position: absolute;
+  right: 0;
+}
+
+.social ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.social li {
+  display: inline-block;
+  padding: 0 3px;
+}
+
+.social li a {
+    text-decoration: none;
+    color: #FEFEF0;
+    font-size: 12pt;
+}
+
+.social li a:hover {
+    color: rgb(239,41,59);
 }
 
 .icon {

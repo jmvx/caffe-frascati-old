@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
     
     <link rel="stylesheet" type="text/css" href="/stylesheet.css">
     

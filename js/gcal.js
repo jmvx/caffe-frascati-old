@@ -107,6 +107,10 @@ function GCalEvents(calendar_json_url, target) {
       ev.title = item.title.$t;
       ev.content = item.content.$t;
       
+      // Recurring events should just be skipped
+      if (item.gd$when === undefined)
+        return;
+      
       // Parse the date as an ISO-8601 string, assuming the default timezone
       // if one is not provided
       var start = item.gd$when[0].startTime;

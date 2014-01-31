@@ -22,6 +22,8 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
+var jmvxAnimationCounter = 0;
+
 function jmvxApplySlideshow(target) {
   target = $(target);
   
@@ -39,10 +41,13 @@ function jmvxApplySlideshow(target) {
     var b = parseInt(target.data('fadeduration'));
     var t = (a + b) * n;
     
+    // Generate a unique animation name
+    var aniname = 'jmvxSlideshow' + (++jmvxAnimationCounter).toString();
+    
     // Add CSS to each image
     $.each(imgs, function(i, item) {
       $(item).css({
-        'animation-name': 'jmvxSlideshow',
+        'animation-name': aniname,
         'animation-timing-function': 'ease-in-out',
         'animation-iteration-count': 'infinite',
         'animation-duration': t.toString() + 's',
@@ -57,7 +62,7 @@ function jmvxApplySlideshow(target) {
     // Based on http://css3.bradshawenterprises.com/cfimg/
     var keyframes = '';
     [ '', '-webkit-', '-moz-' ].forEach(function (prefix) {
-      keyframes += '@' + prefix + 'keyframes jmvxSlideshow {\n';
+      keyframes += '@' + prefix + 'keyframes ' + aniname + ' {\n';
       keyframes += '\t0% { opacity: 1; }\n';
       keyframes += '\t' + Math.round(100*a/t) + '% { opacity: 1; }\n';
       keyframes += '\t' + Math.round(100/n) + '% { opacity: 0; }\n';
@@ -65,7 +70,7 @@ function jmvxApplySlideshow(target) {
       keyframes += '\t100% { opacity: 1; }\n';
       keyframes += '}\n\n';
     });
-    target.append($('<style type="text/css" scoped>' + keyframes + '</style>'));
+    target.append($('<style type="text/css">' + keyframes + '</style>'));
   });
   
   // Load each image, decrementing the counter as they load, and then trigger

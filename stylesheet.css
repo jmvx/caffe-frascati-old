@@ -70,12 +70,13 @@ body {
 
 #navigation li a:hover {
     color:rgb(239,41,59);
+    text-decoration:underline;
 }
 
 #navigation li a {
     color:rgb(254,254,240);
     text-decoration:none;
-    font-weight:300;
+    font-weight:400;
 }
 
 #content {
@@ -91,8 +92,6 @@ body {
 #frontpage {
     position:relative;
     height:400px;
-    box-shadow: 0 0 2px gray;
-    border:1px solid #3f3f3f;
     border-radius:5px;
     display:block;
     background-color:black;
@@ -106,6 +105,12 @@ body {
     position:absolute;
     min-height:400px;
     min-width:900px;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.slideshow img {
+  overflow:hidden !important;
 }
 
 .side-image img {
@@ -116,11 +121,16 @@ body {
 
 #content p {
     float:left;
-    font-weight:300;
+    font-weight:400;
     width:550px;
     margin-left:20px;
     margin-right:20px;
-    
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+#content p.noimage {
+  width:858px;
 }
 
 .hours, .address {
@@ -128,7 +138,7 @@ body {
     display:inline;
     width:120px;
     font-family: 'Montserrat', sans-serif;
-    font-weight:300;
+    font-weight:400;
     color:rgb(254,254,240);
     height:100px;
 }
@@ -164,6 +174,10 @@ li.list-title {
     min-height:65px;
 }
 
+.address a:hover {
+  text-decoration:underline;
+}
+
 .address {
     text-align:right;
     padding-top:15px;
@@ -178,6 +192,25 @@ li.list-title {
     position: absolute;
     right: 0;
     z-index:1;
+}
+
+.subscribe {
+  margin-top:61px;
+  min-height:65px;
+  position: absolute;
+  right: 0;
+  z-index:1;
+  color:rgb(254,254,240);
+  
+}
+
+.subscribe a {
+  color:rgb(239,41,59);
+  text-decoration:none;
+}
+
+.subscribe a:hover {
+  text-decoration:underline;
 }
 
 .social ul {
@@ -252,7 +285,7 @@ img.logo {
 
 .aboutgallery {
     display:block;
-    width:500px;
+    width:560px;
     padding-left:315px;
     margin-right:auto;
     margin-left:auto;
@@ -261,6 +294,12 @@ img.logo {
 img.aboutpic {
     display:inline-block;
     height:200px; 
+}
+
+img.mobilepic {
+  width:180px;
+  display:inline-block;
+  margin:0px auto;
 }
 
 .menusection h1 {
@@ -295,6 +334,12 @@ h2 {
     margin-top:15px;
     margin-bottom:0px;
     font-weight:normal;
+}
+
+h2.noimage {
+  float:left;
+  width:100%;
+  margin-bottom:15px;
 }
 
 h2 a {
@@ -339,7 +384,7 @@ h2 a {
 
 .menusection li {
     list-style-type:none;
-    font-weight:300;
+    font-weight:400;
     float:left;
 }
 
@@ -401,7 +446,7 @@ h2 a {
     height:100%;
     vertical-align:top;
     border-radius:5px;
-    font-weight:300;
+    font-weight:400;
 }
 
 .event-title {
@@ -448,12 +493,109 @@ h2 a {
     margin-left:auto;
     font-size:9pt;
     text-align:center;  
-    border-top:1px solid gray;
+    border-top:1px solid #333333;
     padding-bottom:30px;
+    padding-top:10px;
     color:rgb(254,254,240);
 }
 
 .credit a {
     text-decoration:none;
     color:rgb(239,41,59);
+}
+
+ul.shop-gallery {
+  margin:0px;
+  margin-left:21px;
+  padding:0px;
+}
+
+li.shop-item {
+  list-style-type:none;
+  display:inline-block;
+  width:275px;
+  height:300px;
+  border-radius:5px;
+  border:1px solid #d3d3d3;
+  box-shadow: 0 0 2px #d3d3d3;
+  margin-bottom:10px;
+  margin-right:9px;
+  text-align:center;
+  vertical-align:top;
+  overflow:hidden;
+  position:relative;
+}
+
+div.merch-info {
+  margin-top:5px;
+  font-weight:700;
+  position:absolute;
+  top:10px;
+  width:100%;
+  right:0;
+  padding-right:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size:12pt;
+  color:rgb(239,41,59);
+  background-color:rgba(0,0,0,0.7);
+  box-shadow: 0 0 2px gray;
+}
+
+div.merch-description {
+  display:none;
+}
+
+li.shop-item:hover > div.merch-description {
+  position:absolute;
+  top:0;
+  border-radius:15px;
+  display:block;
+  width:100%;
+  height:100%;
+  background-color:rgb(254,254,240);
+  border-radius:5px;
+}
+
+div.merch-description > p {
+  width:255px !important;
+  padding:0px;
+  padding-top:7px;
+  margin:0px;
+  margin-bottom:0px !important;
+  margin-top:5px !important; 
+  margin-right:10px !important;
+  margin-left:10px !important;
+  text-align:center;
+}
+
+li.shop-item img {
+  height:300px;
+  width:275px;
+  border-radius:5px;
+}
+
+a.cal-links {
+  text-decoration:none;
+  display:inline-block;
+  margin-top:19px;
+  margin-left:20px;
+  color:rgb(239,41,59);
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+.caption {
+  text-align:center;
+}
+
+.caption a{
+  text-decoration:none;
+  color:rgb(239,41,59);
+}
+
+.caption a:hover {
+  text-decoration:underline;
 }

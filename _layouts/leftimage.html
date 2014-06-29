@@ -10,7 +10,7 @@ layout: default
   {% endif %}
     
   {% for image in page.sideimages %}
-    {% if forloop.first %}
+    {% if forloop.last %}
       <img src="{{ image }}" />
     {% else %}
       <img data-slidesrc="{{ image }}" />

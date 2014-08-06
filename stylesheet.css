@@ -599,3 +599,14 @@ a:hover {
 .caption a:hover {
   text-decoration:underline;
 }
+
+.slideshow-text {
+  font-family: 'TradeGothicLTCom-BdCn20', sans-serif;
+  color:white;
+  position:absolute;
+  font-size:18pt;
+  padding:12px;
+  background-color: rgba(0, 0, 0, 0.6); /* for overlay */
+  width:300px;
+  -webkit-font-smoothing: subpixel-antialiased
+}
